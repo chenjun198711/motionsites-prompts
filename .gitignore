@@ -2,3 +2,11 @@
 __pycache__/
 *.pyc
 .DS_Store
+motionsites-app/node_modules/
+motionsites-app/android/.gradle/
+motionsites-app/android/app/build/
+motionsites-app/android/build/
+motionsites-app/android/captures/
+motionsites-app/android/local.properties
+*.apk
+*.aab
