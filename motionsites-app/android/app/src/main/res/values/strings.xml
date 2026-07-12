@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">MotionSites Gallery</string>
-    <string name="title_activity_main">MotionSites Gallery</string>
-    <string name="package_name">com.motionsites.gallery</string>
-    <string name="custom_url_scheme">com.motionsites.gallery</string>
-</resources>
