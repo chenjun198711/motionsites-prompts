@@ -5,6 +5,8 @@
 ## 内容
 
 - `motionsites_all_prompts.json` - 全部 328 条提示词（含 AI 生成中文描述）
+- `motionsites_app_prompts.json` - 17 条 App 提示词
+- `motionsites_website_prompts.json` - 311 条 Website 提示词
 - `motionsites_free_prompts.json` - 114 条免费提示词
 - `motionsites_premium_prompts.json` - 214 条付费提示词
 - `motionsites_all_prompts.csv` - CSV 格式表格

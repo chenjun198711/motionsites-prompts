@@ -1,17 +1,17 @@
-# MotionSites 免费提示词汇总
+# MotionSites Free Prompts
 
-共 114 个免费提示词
+共 114 个提示词
 
----
-
-## 1. Interactive Discovery
-
+## Interactive Discovery
+- **ID**: `interactive-discovery`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `interactive-discovery`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 暗色全屏英雄区，鼠标移动时圆形光斑揭示第二张岩石纹理图像，搭配Lithos品牌标志与地质主题排版。
 
-```
+### Prompt
 Build a full-screen, dark-themed hero section for a geology brand called **Lithos**, using **React 18 + TypeScript + Vite + Tailwind CSS** and **lucide-react** for icons. The signature feature is a **cursor-following spotlight that reveals a second image** through a soft circular mask on top of a base image. Match every detail below exactly.
 
 ### Fonts
@@ -84,18 +84,19 @@ Apply:
 - Center nav pill and desktop Sign Up are `hidden` below `md`; the mobile hamburger is `md:hidden`.
 - Bottom-left paragraph is `hidden sm:block`; bottom-right block is full-width on mobile (`left-5 right-5`) and right-anchored from `sm`.
 - Use `100dvh` so mobile browser chrome doesn't clip the section.
-```
 
 ---
 
-## 2. Bold Studio
-
+## Bold Studio
+- **ID**: `bold-studio`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `bold-studio`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏视频背景的创意机构首页，品牌名“VANGUARD”以粗体大字居中显示，视频循环播放营造沉浸式视觉冲击。
 
-```
+### Prompt
 Build a fullscreen hero landing page for a creative agency called "VANGUARD" using React, Tailwind CSS, and Vite. The page should be a single viewport-height section with a looping background video and all content overlaid on top.
 
 **Background video:**
@@ -173,18 +174,19 @@ With classes: `.animate-fade-up` (0s delay), `.animate-fade-up-delay-1` through 
 - Stats and CTA row use `flex-wrap` to prevent overflow on small screens.
 
 Make everything fully mobile responsive. Use a single `App.tsx` component with `useState` for the menu toggle. No routing needed.
-```
 
 ---
 
-## 3. Prisma Creative Studio
-
+## Prisma Creative Studio
+- **ID**: `prisma-landing`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: landing
-- **ID**: `prisma-landing`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 暗色电影感创意工作室着陆页，暖奶油色文字搭配动态渐入动画，三区块展示品牌故事与特色功能。
 
-```
+### Prompt
 Create a React + Vite + TypeScript + Tailwind CSS landing page for a creative studio called "Prisma". The page has 3 sections: Hero, About, and Features. Use framer-motion for animations and lucide-react for icons. The design is dark, moody, and cinematic with a warm cream color palette.
 
 FONTS
@@ -309,18 +311,19 @@ Vite + React 18 + TypeScript
 Tailwind CSS 3
 framer-motion (for all animations: pull-up text, fade-in, scroll-linked opacity, card entrances)
 lucide-react (ArrowRight, Check icons)
-```
 
 ---
 
-## 4. 3D Jack Portfolio
-
+## 3D Jack Portfolio
+- **ID**: `3d-jack-portfolio-hero`
 - **Category**: Portfolio
 - **Type**: hero
 - **Page Type**: landing
-- **ID**: `3d-jack-portfolio-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色主题的3D创作者个人主页，渐变标题文字搭配动态粒子背景，展示Jack的3D作品集与创意服务。
 
-```
+### Prompt
 Build a 3D Creator portfolio landing page for "Jack" using React, TypeScript, Tailwind CSS, Framer Motion, and Lucide React. The page has a dark theme (#0C0C0C background) with the font Kanit (Google Fonts, weights 300-900). The page title is "Jack -- 3D Creator".
 
 GLOBAL STYLES
@@ -463,18 +466,19 @@ tailwindcss (^3.4.1)
 vite, typescript
 RESPONSIVE BREAKPOINTS
 All sections use Tailwind's default breakpoints (sm: 640px, md: 768px, lg: 1024px) with mobile-first approach. Heavy use of clamp() for fluid typography. The entire design scales gracefully from mobile to ultra-wide screens.
-```
 
 ---
 
-## 5. Velorah
-
+## Velorah
+- **ID**: `velorah-hero`
 - **Category**: Agency
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `velorah-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏循环视频背景搭配毛玻璃导航栏，暗色主题下衬线字体标题与无衬线正文形成对比，营造电影级视觉冲击的代理机构首页。
 
-```
+### Prompt
 Create a single-page hero section with a fullscreen looping background video, glassmorphic navigation, and cinematic typography. Use React + Vite + Tailwind CSS + TypeScript with shadcn/ui.
 
 Video Background:
@@ -555,18 +559,19 @@ Subtext gets animate-fade-rise-delay
 Hero CTA button gets animate-fade-rise-delay-2
 
 Layout: No decorative blobs, radial gradients, or overlays. Minimalist, cinematic, vertically centered hero. The video provides all visual depth.
-```
 
 ---
 
-## 6. Aetheris Voyage
-
+## Aetheris Voyage
+- **ID**: `aetheris-voyage-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `aetheris-voyage-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 星际旅行主题着陆页，全屏视频背景搭配液态玻璃设计系统，Framer Motion入场动画营造沉浸式太空体验。
 
-```
+### Prompt
 Build Prompt: Cinematic Space-Travel Landing Page
 Build a single-page landing site with two full-height sections (Hero + Capabilities), both using looping background videos with custom JS crossfade, a shared liquid-glass design system, and Framer Motion entrance animations.
 
@@ -718,18 +723,19 @@ No CSS transitions on the videos — fades must be rAF-driven per the FadingVide
 Videos are full-bleed with no dark overlay; contrast comes from the liquid-glass chrome.
 Framer Motion dev warnings about list keys can be suppressed with a console.error filter wrapper — they're benign.
 The detailed prompt above captures every element, style, animation, video URL, and font to recreate the landing page exactly.
-```
 
 ---
 
-## 7. VEX Ventures
-
+## VEX Ventures
+- **ID**: `vex-ventures-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `vex-ventures-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏视频背景英雄区，无任何遮罩层，使用Inter字体，自动播放循环视频，适用于品牌展示首页。
 
-```
+### Prompt
 Recreate this hero section exactly. Here are the complete specifications:
 
 Video Background:
@@ -818,18 +824,19 @@ AnimatedHeading component: Splits text by \n into lines, then each line into ind
 Color scheme: Black background, white text, gray-300 for secondary text, white/20 for borders. No purple, no indigo.
 
 Stack: React + TypeScript, Tailwind CSS, Vite. No extra UI libraries needed. Icons from lucide-react if needed (none currently used in the hero).
-```
 
 ---
 
-## 8. SkyElite Private Jets
-
+## SkyElite Private Jets
+- **ID**: `skyelite-hero`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `skyelite-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色视频背景上覆盖半透明导航栏，品牌名"SkyElite"居左，桌面端显示完整菜单项，移动端汉堡菜单展开白色下拉面板，营造高端私人飞机品牌登陆页的沉浸式视觉体验。
 
-```
+### Prompt
 Create a premium private jet landing page hero section with the following specifications:
 
 Video Background:
@@ -875,18 +882,19 @@ Content wrapper: relative, h-full, flex flex-col
 Main content area: flex-1, flex items-center justify-center
 
 Make it clean, modern, and premium-looking with smooth interactions.
-```
 
 ---
 
-## 9. Modern Agency
-
+## Modern Agency
+- **ID**: `modern-agency`
 - **Category**: Agency
 - **Type**: hero
 - **Page Type**: landing
-- **ID**: `modern-agency`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深灰底色上叠加动态着色器动画，呈现漩涡与彩色流光玻璃效果，适合设计机构品牌首页
 
-```
+### Prompt
 Build a React + Vite + Tailwind CSS landing page for "Axion Studio" - a design agency site. Use the `shaders` package (npm: `shaders`) for the hero background, `lucide-react` for icons. The page has 3 sections. Match every detail exactly:
 
 ---
@@ -998,18 +1006,19 @@ Standard Tailwind directives plus two utility classes (not actively used in curr
 - **Max content width:** 1440px, centered with mx-auto
 - **Responsive breakpoints:** Default Tailwind (sm: 640px, md: 768px, lg: 1024px, xl: 1280px)
 - **Live clock:** Updates every second, shows London timezone in HH:MM format
-```
 
 ---
 
-## 10. Aethera Studio
-
+## Aethera Studio
+- **ID**: `aethera-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `aethera-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏电影级英雄区，背景为循环播放的渐隐渐现视频，搭配衬线标题和无衬线导航文字，营造沉浸式品牌展示体验。
 
-```
+### Prompt
 Prompt: Cinematic Hero Section with Looping Video Background
 
 Create a fullscreen single-page hero section using React + Vite + Tailwind CSS + TypeScript with the following specifications:
@@ -1081,18 +1090,19 @@ Gradient overlay on video
 Navigation bar (z-10)
 Hero section (z-10)
 All elements should be responsive and maintain the glassmorphic aesthetic with the specified padding, positioning, and smooth animations.
-```
 
 ---
 
-## 11. Asme
-
+## Asme
+- **ID**: `asme-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `asme-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色电影感全屏英雄区，背景循环视频下移17%，液态玻璃UI元素叠加，营造沉浸式视觉冲击。
 
-```
+### Prompt
 Build a single-page hero section with a full-screen looping background video, liquid glass UI elements, and a dark cinematic aesthetic. Use React, TypeScript, Tailwind CSS, and Lucide React icons. Here are the exact specifications:
 
 Background Video:
@@ -1142,18 +1152,19 @@ Icons: Instagram, Twitter, Globe (all size 20) from lucide-react
 Each has an aria-label
 
 Tech stack: Vite + React 18 + TypeScript, Tailwind CSS 3, lucide-react for all icons. Default Tailwind config with no extensions. No other UI libraries.
-```
 
 ---
 
-## 12. Innovation
-
+## Innovation
+- **ID**: `innovation-landing`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: landing
-- **ID**: `innovation-landing`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全黑背景单页着陆页，使用毛玻璃液体质感卡片，搭配Instrument Serif字体与framer-motion动画，营造科技感创新展示。
 
-```
+### Prompt
 RECREATION PROMPT
 
 Build a single-page landing site using React + TypeScript + Vite + Tailwind CSS + framer-motion + lucide-react. The entire page has a bg-black background. The font loaded via Google Fonts is Instrument Serif (italic and regular). Import it in index.css:
@@ -1272,18 +1283,19 @@ Card 2: Video URL:
 https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260324_151826_c7218672-6e92-402c-9e45-f1e0f454bdc4.mp4
 Tag: "Craft". Title: "Design & Execution". Description: "From concept to launch, we obsess over every detail to deliver experiences that feel effortless and look extraordinary."
 
-```
 
 ---
 
-## 13. Orbis NFT
-
+## Orbis NFT
+- **ID**: `orbis-nft-landing`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: landing
-- **ID**: `orbis-nft-landing`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深空蓝背景的NFT品牌着陆页，采用视频背景与液态玻璃UI效果，搭配粗体标题和手写装饰字体，营造科幻感视觉体验。
 
-```
+### Prompt
 Create an NFT landing page called "Orbis.Nft" with 4 sections, using a dark space theme. The page uses video backgrounds served from CloudFront, a liquid glass UI effect, and a specific color/font system. Recreate it exactly as described below.
 
 FONTS (Google Fonts)
@@ -1485,18 +1497,19 @@ Responsive: Mobile-first with sm:, md:, lg: breakpoints throughout
 Max content width: 1831px across all sections
 
 All text is uppercase except the Condiment cursive accents which are normal-case
-```
 
 ---
 
-## 14. Portfolio Cosmic
-
+## Portfolio Cosmic
+- **ID**: `portfolio-cosmic-hero`
 - **Category**: Portfolio
 - **Type**: hero
 - **Page Type**: landing
-- **ID**: `portfolio-cosmic-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色单页作品集着陆页，采用极简黑灰配色与衬线字体，结合GSAP滚动动画和Framer Motion微交互，适合展示创意作品。
 
-```
+### Prompt
 Prompt to recreate this landing page:
 
 Build a single-page dark portfolio landing page using React + Vite + Tailwind CSS + TypeScript + GSAP + Framer Motion + hls.js.
@@ -1678,18 +1691,19 @@ Social links [Twitter, LinkedIn, Dribbble, GitHub] + Green pulsing dot + "Availa
 gsap, framer-motion, hls.js, react-router-dom, tailwindcss-animate
 
 Add smooth scroll nav and page transitions.
-```
 
 ---
 
-## 15. Securify Data Security
-
+## Securify Data Security
+- **ID**: `securify-hero`
 - **Category**: SaaS
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `securify-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏循环背景视频，浮动药丸形导航栏，大号错落排版标题，深色数据安全SaaS着陆页。
 
-```
+### Prompt
 Build a full-screen hero section for a data-security SaaS landing page called "securify" using React + TypeScript + Tailwind CSS, with a looping fullscreen background video, a floating pill-shaped navbar, and large staggered typography.
 
 Fonts & Global Styles
@@ -1746,18 +1760,19 @@ Navbar pills use bg-neutral-900/90 backdrop-blur.
 Only transitions: hover:text-white on nav links, hover:bg-neutral-200 on the button.
 No purple/indigo anywhere; palette is pure black, white, neutral-900, and white opacity variants (white/40, white/70, white/90).
 Responsive: mobile hides nav links and diagonal dividers; typography scales via vw units.
-```
 
 ---
 
-## 16. Portal
-
+## Portal
+- **ID**: `portal-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `portal-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏电影级视频背景英雄区，底部模糊遮罩覆盖，中央显示门户主题文字与流媒体风格界面
 
-```
+### Prompt
 PROMPT:
 
 Build a full-viewport cinematic movie/streaming hero section using React, Tailwind CSS, and Lucide React icons. Use the Inter font from Google Fonts. The entire page is a single full-height hero -- no scrolling, no additional sections.
@@ -1874,18 +1889,19 @@ Below sm (< 640px): Smaller text, tighter padding, Search/User buttons hidden (a
 Below lg (< 1024px): Nav links hidden, hamburger menu shown
 md and up: Side-by-side layout for hero content and navigation arrows
 lg and up: Full desktop navbar with all links visible
-```
 
 ---
 
-## 17. Max Reed Portfolio
-
+## Max Reed Portfolio
+- **ID**: `max-reed-portfolio`
 - **Category**: Features
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `max-reed-portfolio`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色全屏个人作品集头部，展示姓名、职业简介与液态玻璃质感按钮，极简高端设计。
 
-```
+### Prompt
 Build a full-viewport dark personal portfolio Features section using React + TypeScript + Tailwind CSS + lucide-react.
 
 **Layout & Structure:**
@@ -1972,18 +1988,19 @@ Bottom - Reach Me card (rounded-2xl, bg-[#324444], p-5 md:p-6, noise-overlay):
 ```
 
 Font: Inter (system fallback). Icons from lucide-react: ArrowUpRight, Sparkle, Figma, Framer, Palette, PenTool, Layers, Type, Aperture, Chrome, Camera, Brush, Box, Wand2. All icons use strokeWidth 1.5.
-```
 
 ---
 
-## 18. Mindloop Landing
-
+## Mindloop Landing
+- **ID**: `mindloop-landing`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: landing
-- **ID**: `mindloop-landing`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 纯黑背景搭配白色文字的单色极简落地页，用于展示Mindloop内容平台，以Inter无衬线字体为主，Instrument Serif斜体强调关键词，搭配Framer Motion微动效。
 
-```
+### Prompt
 Build a dark monochrome landing page called Mindloop — a newsletter/content platform. Use React + Vite + TypeScript + Tailwind CSS + shadcn/ui + Framer Motion. Fonts: Inter (sans) and Instrument Serif (serif, used for italic accent words). The entire theme is pure black (#000) background with white foreground — no colors or gradients beyond monochrome. Install hls.js and framer-motion.
 
 Design System (index.css)
@@ -2114,18 +2131,19 @@ tailwindcss-animate plugin
 Assets Needed
 3 avatar images (avatar-1.png, avatar-2.png, avatar-3.png)
 3 platform icons (icon-chatgpt.png, icon-perplexity.png, icon-google.png)
-```
 
 ---
 
-## 19. RIVR
-
+## RIVR
+- **ID**: `rivr-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `rivr-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: RIVR DeFi仪表盘英雄区，采用玻璃拟态设计，半透明磨砂玻璃背景搭配柔和光影，展示核心数据与品牌标识。
 
-```
+### Prompt
 Build a Hero section for a DeFi dashboard named RIVR showcasing a sleek, glassmorphism aesthetic. Please mimic these exact specifications to ensure a premium UI.
 
 Dependencies: 
@@ -2208,18 +2226,19 @@ CRITICAL corner masks to include inside this container:
 Content: 
 - Circle Icon: A div with `bg-[rgba(30,50,90,0.05)] w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center border border-[rgba(30,50,90,0.1)]` using `ArrowUpRight` (`text-[rgba(30,50,90,0.8)]`).
 - Info column containing title "Documentation" (`text-[16px] md:text-[20px] font-normal text-[rgba(30,50,90,0.95)]`). Below it, a line containing text "Library" and a `ChevronRight` icon wrapped in `<div className="flex items-center gap-1 text-[rgba(30,50,90,0.6)] cursor-pointer hover:text-[rgba(30,50,90,0.8)] transition-colors"><span className="text-[12px] md:text-[15px] font-normal">...`
-```
 
 ---
 
-## 20. AI Designer Portfolio
-
+## AI Designer Portfolio
+- **ID**: `vortex-studio-hero`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `vortex-studio-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 单页展示创意设计工作室"Viktor Oddy"，白底搭配PP Mondwest衬线字体Logo，居中窄列布局，简约优雅。
 
-```
+### Prompt
 Create a single-page landing page for a creative design studio called "Viktor Oddy" using React, TypeScript, Vite, and Tailwind CSS. Use lucide-react for icons. The page has a white background throughout and uses two custom fonts: "PP Neue Montreal" (body text, loaded from Webflow CDN) and "PP Mondwest" (serif accent font, loaded from a local /PPMondwest-Regular.woff2 file). The body default font is PP Neue Montreal with system fallbacks.
 
 The page consists of these sections in order:
@@ -2383,18 +2402,19 @@ src/components/CopyrightBar.tsx - Copyright line
 src/components/BottomNav.tsx - Fixed floating bottom nav
 src/hooks/useInViewAnimation.ts - IntersectionObserver scroll-trigger hook
 src/index.css - Font faces, marquee animation, fade-in-up animation
-```
 
 ---
 
-## 21. CodeNest Coding Platform
-
+## CodeNest Coding Platform
+- **ID**: `codenest-hero`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `codenest-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色全屏背景视频搭配左侧渐变遮罩，中央大型SVG椭圆光晕，三根半透明竖线网格，营造高端编程教育平台沉浸式英雄区。
 
-```
+### Prompt
 Create a high-end, dark-themed hero section for a coding education platform called 'CodeNest' using React and Tailwind CSS. The design must be responsive and follow these precise specifications:
 
 1. Background & Layout:
@@ -2448,18 +2468,19 @@ Fonts: Inter, Plus Jakarta Sans, and Instrument Serif (italic).
 Icons: lucide-react (ArrowRight, Menu, X).
 
 Library: hls.js for video streaming.
-```
 
 ---
 
-## 22. Power AI
-
+## Power AI
+- **ID**: `power-ai-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `power-ai-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色全屏英雄区，循环背景视频覆盖，导航栏、标题、副标题、行动按钮及底部品牌滚动条，营造沉浸式科技感。
 
-```
+### Prompt
 Create a full-screen dark hero section with a looping background video, navbar, headline, subtitle, CTA button, and a logo marquee at the bottom. Here are the exact specifications:
 
 Theme & Colors (index.css CSS variables):
@@ -2510,18 +2531,19 @@ Liquid glass utility class (in index.css):
 .liquid-glass::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1.4px; background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.15) 20%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.15) 80%, rgba(255,255,255,0.45) 100%); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
 
 Section structure: min-h-screen flex flex-col — navbar at top, content centered via flex-1 flex items-center justify-center, marquee at bottom.
-```
 
 ---
 
-## 23. Bloom AI
-
+## Bloom AI
+- **ID**: `bloom-ai-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `bloom-ai-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏液态玻璃风格AI植物设计平台首页，背景为自动循环视频，内容浮于上方，采用Poppins和Source Serif 4字体，纯灰度配色。
 
-```
+### Prompt
 Create a full-screen hero landing page for "Bloom" — an AI-powered plant/floral design platform. The design uses a liquid glass morphism aesthetic over a looping video background.
 
 Background
@@ -2585,31 +2607,33 @@ Social icon links: text-white hover:text-white/80 transition-colors
 Icon containers: w-8 h-8 rounded-full bg-white/10 flex items-center justify-center
 No border classes anywhere — glass effect handles all borders via ::before
 border-radius token: --radius: 1rem
-```
 
 ---
 
-## 24. Luminex
-
-- **Category**: Hero Section
-- **Type**: hero
-- **Page Type**: hero
+## Luminex
 - **ID**: `luminex-hero`
-
-```
-Create a modern React landing page with a full-screen HLS video background, glassmorphic navigation header, and hero content positioned in the bottom-left corner.
-```
-
----
-
-## 25. Sentinel AI
-
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `sentinel-ai-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏HLS视频背景搭配毛玻璃导航栏，底部左侧展示品牌标语与行动按钮。
 
-```
+### Prompt
+Create a modern React landing page with a full-screen HLS video background, glassmorphic navigation header, and hero content positioned in the bottom-left corner.
+
+---
+
+## Sentinel AI
+- **ID**: `sentinel-ai-hero`
+- **Category**: Hero Section
+- **Type**: hero
+- **Page Type**: hero
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色全屏安全公司首页，嵌入3D场景背景，搭配渐变文字与发光按钮，科技感强烈。
+
+### Prompt
 Create a full-screen dark hero landing page for a security company called "SENTINEL AI" using React, Vite, TypeScript, Tailwind CSS, shadcn/ui, and an embedded Spline 3D scene as the background. The tech stack uses @splinetool/react-spline and @splinetool/runtime for the 3D embed. Here is every detail:
 
 FONT:
@@ -2700,18 +2724,19 @@ The entire content area has pointer-events-none so clicks pass through to the Sp
 Responsive fluid typography uses clamp() for the heading, subheading, and description
 The content is anchored to the bottom-left of the viewport (flex items-end on the section + padding-bottom on the content)
 No hamburger menu on mobile -- the nav links and CTA simply hide (hidden md:flex / hidden md:inline-flex)
-```
 
 ---
 
-## 26. DesignPro Academy
-
+## DesignPro Academy
+- **ID**: `designpro-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `designpro-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色全屏视频背景上，白色导航栏与渐变按钮突出，营造沉浸式产品设计教育平台首页。
 
-```
+### Prompt
 Create a full-screen hero section for a product design education platform called "DesignPro" with the following exact specifications:
 
 Background:
@@ -2837,18 +2862,19 @@ Content: relative z-10 positioning to appear above video
 Smooth transitions on all interactive elements
 
 Create the complete implementation including the ShinyText component with proper framer-motion animation logic.
-```
 
 ---
 
-## 27. Nexora Automation
-
+## Nexora Automation
+- **ID**: `nexora-hero`
 - **Category**: SaaS
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `nexora-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色文字搭配纯白背景，顶部导航栏与全屏英雄区无缝衔接，采用Instrument Serif衬线标题与Inter无衬线正文，营造高端SaaS品牌首页的简洁专业感。
 
-```
+### Prompt
 Create a SaaS landing page hero section with the following exact specifications:
 
 Page Layout
@@ -2943,18 +2969,19 @@ The dashboard overflows toward the bottom of the viewport and is clipped by over
 No dark mode — light only
 All colors use semantic Tailwind tokens, never raw color values in components
 The SVG chart uses a hand-crafted cubic Bézier path, not a charting library
-```
 
 ---
 
-## 28. Transform Data
-
+## Transform Data
+- **ID**: `transform-data-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `transform-data-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景全屏视频背景的现代英雄区，视频居中放大显示，带有JavaScript控制的淡入淡出循环播放效果，适合数据科技类品牌展示。
 
-```
+### Prompt
 HERO SECTION CREATION PROMPT
 
 Create a modern hero section with a looping video background and the following specifications:
@@ -3134,18 +3161,19 @@ Hero content container (centered, max-width constraints)
 Nested components for badge, header, and search input
 
 All elements positioned over full-screen video background
-```
 
 ---
 
-## 29. Glow Features
-
+## Glow Features
+- **ID**: `glow-features`
 - **Category**: Features Section
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `glow-features`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景上三列发光渐变卡片网格，每张卡片包含图标、标题和说明文字，悬停时呈现霓虹光效。
 
-```
+### Prompt
 Create a React web application using Vite and Tailwind CSS v4 that perfectly replicates a dark-themed glowing feature card section.
 
 **Libraries Required:**
@@ -3197,18 +3225,19 @@ Instantiate three of these cards inside the main grid with the following exact d
    - Delay: `0.3`
    - Description: "I use Motion to build lively prototypes, bridging the gap between views and code."
    - Gradient: `linear-gradient(137deg, #4361EE 0%, #E0AEFF 45%, #F72585 100%)`
-```
 
 ---
 
-## 30. Lumina
-
+## Lumina
+- **ID**: `lumina-footer`
 - **Category**: Footer Section
 - **Type**: footer
 - **Page Type**: hero
-- **ID**: `lumina-footer`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 沉浸式视频背景搭配液态玻璃风格页脚，呈现高端科技感的品牌展示页面。
 
-```
+### Prompt
 Create a React frontend using Tailwind CSS v4, the `motion/react` library for animations, and `lucide-react` for icons. I want to build a page with an immersive video background and a highly stylized "liquid glass" footer.
 
 Please follow these exact specifications:
@@ -3282,18 +3311,19 @@ Make a 3-column grid containing these lists:
 - Create a bottom border (`pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4`).
 - Left side: `<p className="text-[10px] uppercase tracking-widest opacity-50">Curated by @GotInGeorgiG</p>`
 - Right side: A label `<span className="text-[10px] uppercase tracking-widest opacity-50">Join the Journey:</span>` alongside a horizontal flex row of `lucide-react` icons (sizes 16): Music2, Facebook, Twitter, Youtube, and Instagram. Wrap each in an `<a>` with `opacity-70 hover:opacity-100 transition-colors hover:text-white`.
-```
 
 ---
 
-## 31. USD Halo
-
+## USD Halo
+- **ID**: `halo-usd-landing`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: landing
-- **ID**: `halo-usd-landing`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 高端金融科技风格稳定币产品着陆页，采用浅灰背景与TT Norms Pro字体，包含导航栏与全屏英雄区域。
 
-```
+### Prompt
 Build a premium, fintech-style landing page for a stablecoin product called "Halo / USD Halo" using React + TypeScript + Vite + Tailwind CSS, with lucide-react for icons. No other UI libraries. Background color of the page is #F5F5F5.
 
 Global Setup
@@ -3386,18 +3416,19 @@ InfoSection
 BackedBySection
 UseCasesSection
 All section backgrounds are #F5F5F5. All headings use negative letter-spacing for the tight, modern fintech feel. Use font-medium (600) as the heaviest weight throughout.
-```
 
 ---
 
-## 32. Taskly
-
+## Taskly
+- **ID**: `taskly-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `taskly-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 纯白背景配左上角蓝光渐变，中央液态玻璃导航栏，双栏布局展示“Work smarter, achieve faster”大标题，适合现代SaaS产品首屏。
 
-```
+### Prompt
 System Prompt: High-Fidelity "Liquid Glass" Hero Section
 
 Core Layout: Create a 1600px max-width landing page hero section. The background should be pure white with a subtle, layered gradient glow in the top-left (using blurred ellipses in light blue #60B1FF and #319AFF). The design must be fully responsive, transitioning from a single-column mobile view to a dual-column desktop layout.
@@ -3440,18 +3471,19 @@ Key Technical Specs for the Developer:
 Video Tag: autoPlay loop muted playsInline.
 Container: Use a relative wrapper for the background glow and a z-10 main container for the content.
 Smoothing: Apply -webkit-font-smoothing: antialiased for the sharpest typography.
-```
 
 ---
 
-## 33. Stellar AI
-
+## Stellar AI
+- **ID**: `stellar-ai-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `stellar-ai-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 白色背景的Stellar.ai首页英雄区，居中布局，使用Inter字体，包含渐入动画效果。
 
-```
+### Prompt
 Create a "Stellar.ai" landing page hero section using React, Tailwind CSS, and Lucide React icons. Use the Inter font (imported from Google Fonts). The page has a white background (bg-white), max-width max-w-7xl, and is centered with mx-auto.
 
 Font: Import Inter (weights 400, 500, 600, 700) from Google Fonts. Set font-family: 'Inter', sans-serif on the body.
@@ -3496,18 +3528,19 @@ c. Testing: "Test Suite Results" with green success, 127/127 tests
 d. Deploy: "Deploy to Production" with 4 checklist items, Deploy Now button
 
 Company Logos (delay: 0.8s): mt-24 flex with INTERSCOPE, SPOTIFY, Nexera (dot grid), M3 (serif italic), LAURA COLE (LC circle), vertex (dots)
-```
 
 ---
 
-## 34. Datacore Booking
-
+## Datacore Booking
+- **ID**: `datacore-booking-hero`
 - **Category**: SaaS
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `datacore-booking-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏视频背景的SaaS应用首页，紫色主色调搭配深紫导航栏，自动播放循环视频营造沉浸式体验。
 
-```
+### Prompt
 Create a responsive, full-screen hero section for a web application using React and Tailwind CSS.
 
 Design System & Assets:
@@ -3565,18 +3598,19 @@ Call to Action Buttons (Row):
 Button 1: "Book a Free Demo" — Primary Purple (#7b39fc), rounded 10px, Cabin Medium 16px, White.
 Button 2: "Get Started Now" — Dark Purple (#2b2344), rounded 10px, Cabin Medium 16px, Off-white (#f6f7f9).
 Hover effects: Slightly lighten backgrounds on hover.
-```
 
 ---
 
-## 35. SAAS Software
-
+## SAAS Software
+- **ID**: `convix-software-hero`
 - **Category**: SaaS
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `convix-software-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深灰圆角容器内全屏视频背景，覆盖PR软件品牌名"Convix Software"，营造高端科技感
 
-```
+### Prompt
 Build a fully responsive, full-viewport hero section for a PR-agency SaaS called "Convix Software" with these exact specs:
 
 Page Frame
@@ -3659,18 +3693,19 @@ Behavior
 No custom animations; only the native looping muted background video
 Entire hero (video + content + dashboard) is clipped together by the rounded container, so the dashboard cards bleed off the bottom edge
 Fully responsive: navbar collapses to hamburger under md, headline/CTA scale via clamp(), dashboard grid steps from 1 → 2 → 3 columns
-```
 
 ---
 
-## 36. Neuralyn
-
+## Neuralyn
+- **ID**: `neuralyn-hero`
 - **Category**: SaaS
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `neuralyn-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色主题SaaS分析仪表盘着陆页，纯黑背景配白色文字，Hero区全屏展示品牌名称与italic强调词，搭配导航栏与动态效果。
 
-```
+### Prompt
 Create a dark landing page for "Neuralyn" — an analytics dashboard SaaS. Use React + Vite + Tailwind CSS + TypeScript + Framer Motion + shadcn/ui.
 
 Fonts
@@ -3761,18 +3796,19 @@ logo.png — small logo icon
 hero-dashboard.png — dashboard screenshot
 quote-symbol.png — decorative quote mark
 testimonial-avatar.png — circular headshot
-```
 
 ---
 
-## 37. Digitwist AI Builder
-
+## Digitwist AI Builder
+- **ID**: `digitwist-hero`
 - **Category**: SaaS
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `digitwist-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色模式AI建站工具首页，顶部固定透明导航栏，搭配动态视频背景与流畅动画效果。
 
-```
+### Prompt
 Create a dark mode hero section for an AI website builder with the following exact specifications:
 
 ## Technical Setup
@@ -3939,18 +3975,19 @@ Import: `import { motion } from "motion/react"`
 - Primary button accent: #3054ff, hover #2040e0
 - Gradient end color: #b4c0ff
 - Decorative gradients: blue-900/20, indigo-900/20
-```
 
 ---
 
-## 38. Dot
-
+## Dot
+- **ID**: `dot-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `dot-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景的极简品牌首页，中央展示"Dot"字样搭配复古诺基亚字体，下方有动态粒子或光点动画，营造科技感与怀旧氛围。
 
-```
+### Prompt
 Build a React landing page exactly as specified below. Use React 19, Tailwind CSS v4, and motion/react for animations.
 1. Fonts & Global CSS Setup:
 In index.html, import these Google Fonts:
@@ -3996,18 +4033,19 @@ absolute left-[48.5%] md:left-[47.5%] lg:left-[48.5%] -translate-x-1/2 bottom-[3
 Text Style: font-nokia text-[#2A3616] text-[10px] sm:text-[14px] leading-tight break-words min-h-[1.5em].
 Cursor: Add a blinking Framer Motion cursor motion.span (w-1.5 h-3 bg-[#2A3616] ml-1 align-middle) animating opacity from 0 to 1 to 0 over 0.8s, repeating infinitely, linearly.
 
-```
 
 ---
 
-## 39. Email Marketing
-
+## Email Marketing
+- **ID**: `design-rocket-email-hero`
 - **Category**: Email Marketing
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `design-rocket-email-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 一封仿邮件风格的营销落地页，采用衬线字体标题与无衬线正文，展示与微软合作的AI领导力课程“设计火箭证书”。
 
-```
+### Prompt
 Prompt: Recreate "Design Rocket Certificates" Email-Style Landing Page
 Build a single-page React + TypeScript + Vite + Tailwind CSS project that renders an email-style marketing page for a "Design Rocket Certificates" AI leadership course, built in collaboration with Microsoft. Use lucide-react for icons. No other UI libraries.
 
@@ -4141,18 +4179,19 @@ Fonts
 Display: Instrument Serif (all large headings, wordmark in hero)
 Body / UI: Inter
 
-```
 
 ---
 
-## 40. Duolingo Styleguide
-
+## Duolingo Styleguide
+- **ID**: `duolingo-styleguide-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `duolingo-styleguide-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 多邻国风格英雄区，采用圆润Nunito字体与鲜艳绿色主色调，搭配固定导航栏和醒目行动按钮。
 
-```
+### Prompt
 Fonts
 Primary font: 'Nunito' from Google Fonts (weights: 400, 500, 600, 700, 800, 900)
 Display/heading font: 'Feather Bold' from https://db.onlinewebfonts.com/c/14936bb7a4b6575fd2eee80a3ab52cc2?family=Feather+Bold
@@ -4338,18 +4377,19 @@ Display type: 32px
 Button labels: hidden
 Input row: column direction
 
-```
 
 ---
 
-## 41. Price Calculator
-
+## Price Calculator
+- **ID**: `price-calculator`
 - **Category**: SaaS
 - **Type**: pricing
 - **Page Type**: hero
-- **ID**: `price-calculator`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色全宽计算器区域，双栏网格布局，左栏为深黑底表单含四项服务选项，右栏显示实时价格估算结果。
 
-```
+### Prompt
 Recreate Project Estimation Calculator Section
 
 Create a full-width dark calculator section with id calculator-section. Background: bg-background, padding py-16 md:py-28 px-4 md:px-16, max-width max-w-7xl centered.
@@ -4419,18 +4459,19 @@ All prices displayed with .toLocaleString() and $ prefix.
 State: serviceType (design|development|both, default both), pages (number, default 5), needContent (bool), needSEO (bool), timeline (regular|fast|rush, default regular).
 
 Dependencies: Shadcn Slider component, useToast hook.
-```
 
 ---
 
-## 42. Digital Epoch
-
+## Digital Epoch
+- **ID**: `digital-epoch-hero`
 - **Category**: Hero Section
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `digital-epoch-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色渐变背景搭配动态粒子动画，中央展示品牌标语与行动按钮，营造科技感沉浸式首屏体验。
 
-```
+### Prompt
 Build a modern, high-performance landing page section using React, TypeScript, Tailwind CSS v4, and Motion. The application should match the following exact specifications:
 1. Dependencies & Setup
 Libraries: Install lucide-react, motion, clsx, and tailwind-merge.
@@ -4470,18 +4511,19 @@ Render the list twice inline to ensure a seamless loop.
 Card Design: Make each logo's container card exactly match the "Get in touch" navbar button's styling. The container classes must be exactly: group relative h-24 w-40 shrink-0 flex items-center justify-center rounded-full bg-white border border-slate-200/60 shadow-sm hover:border-slate-300 transition-all overflow-hidden.
 Inside the card, add an absolute div using the specific gradient colors, scaled at 1.5 and 0 opacity, which drops to scale 1 and opacity 100 on group-hover.
 The image tag should invert/turn black on hover (group-hover:brightness-0 group-hover:invert).
-```
 
 ---
 
-## 43. Kresna Footer
-
+## Kresna Footer
+- **ID**: `kresna-footer`
 - **Category**: Footer Section
 - **Type**: footer
 - **Page Type**: hero
-- **ID**: `kresna-footer`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景的SaaS品牌页脚，四列网格布局，包含导航链接、公司信息和手写风格标题，底部显示版权与社交媒体图标。
 
-```
+### Prompt
 Build a single-file HTML footer component called Kresna — a sales-automation SaaS brand. The deliverable is one self-contained .html file with inline <style> and inline <script>. Render it inside a <section class="footer-section"> on a white page (body { background: #ffffff; padding: 48px 24px; }).
 Fonts
 Load from Google Fonts in the <head>:
@@ -4659,18 +4701,19 @@ Final markup order inside <section class="footer-section">
   <div class="footer-watermark"> [SVG] </div>
   <script> [fitWatermark] </script>
 </section>
-```
 
 ---
 
-## 44. Vize Footer
-
+## Vize Footer
+- **ID**: `vize-footer`
 - **Category**: Footer Section
 - **Type**: footer
 - **Page Type**: hero
-- **ID**: `vize-footer`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景上采用分层卡片设计，搭配大号SVG滤镜文字和lucide-react图标，营造高级质感页脚组件。
 
-```
+### Prompt
 Build a highly polished, responsive Footer component for a React application using Vite, Tailwind CSS, `lucide-react` for icons, and `motion/react` for animations. 
 
 The design relies on a premium "layered card" aesthetic, precise typography, and a massive background-blended text element utilizing advanced, handcrafted SVG filters.
@@ -4821,18 +4864,19 @@ export default function Footer() {
     </footer>
   );
 }
-```
 
 ---
 
-## 45. HAUL!
-
+## HAUL!
+- **ID**: `haul-footer`
 - **Category**: Footer Section
 - **Type**: footer
 - **Page Type**: hero
-- **ID**: `haul-footer`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景的页脚区域，包含多列链接、社交媒体图标和版权信息，采用Tailwind CSS构建，整体风格简洁现代。
 
-```
+### Prompt
 Build a React functional component using Tailwind CSS, `motion/react` for animations, and `lucide-react` for icons.
 
 **1. Typography & Setup:**
@@ -4872,18 +4916,19 @@ Build a React functional component using Tailwind CSS, `motion/react` for animat
 - Ensure the `y` axis style is tied to the `useTransform` created in step 3 so it scrolls at a different speed than the background.
 - Inside, place an image with `src="https://roof-wish-40038865.figma.site/_components/v2/f31fd17907ce60745d45e83a61d44fd3810d5f25/truck_1.8c4bff83.png"`.
 - Image styling: `w-full h-full object-contain object-bottom origin-bottom`. Add scale responsive classes (`scale-[1.5]` mobile, `scale-110` sm, `scale-[2.0]` md, `scale-105` lg) to ensure the truck fits properly on various screen widths.
-```
 
 ---
 
-## 46. Axion About
-
+## Axion About
+- **ID**: `axion-about`
 - **Category**: About
 - **Type**: about
 - **Page Type**: hero
-- **ID**: `axion-about`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 白色背景的关于页面，顶部有编号圆圈和“Introducing Axion”标签，下方为标题区域，使用系统字体堆栈和Tailwind CSS构建。
 
-```
+### Prompt
 Build a single React component for an "About" section using Tailwind CSS. Use `lucide-react` for the ArrowRight icon. System font stack only (no custom fonts). Match every detail exactly:
 
 ---
@@ -4956,18 +5001,19 @@ Wrapper: `hidden lg:grid grid-cols-[26%_1fr_48%] items-end gap-6 xl:gap-8 px-5 s
 - **Responsive breakpoints:** Default Tailwind (sm: 640px, md: 768px, lg: 1024px, xl: 1280px)
 
 ---
-```
 
 ---
 
-## 47. 404 Planet
-
+## 404 Planet
+- **ID**: `404-planet`
 - **Category**: 404
 - **Type**: 404
 - **Page Type**: hero
-- **ID**: `404-planet`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色全屏背景视频上，居中显示"404"大标题和"PAGE NOT FOUND"副标题，顶部导航栏和底部多列页脚清晰可见，营造科技公司错误页面的沉浸感。
 
-```
+### Prompt
 Build a full-page 404 error page for a hosting company called "NEXOVA". The entire page is a single viewport-height layout with a looping background video, a navigation bar, a centered hero/404 section, and a multi-column footer. Use React + Tailwind CSS + Lucide React icons. No other UI libraries.
 
 ---
@@ -5110,18 +5156,19 @@ Each column title: `text-white text-[10px] sm:text-xs font-bold tracking-[0.15em
 - Mobile: 2-col footer grid, hamburger menu, smaller text sizes
 - Tablet (md): 4-col footer grid so newsletter sits beside the last link column
 - Desktop (lg): 6-col footer grid, full horizontal nav, login button visible
-```
 
 ---
 
-## 48. Liquid Glass CTA
-
+## Liquid Glass CTA
+- **ID**: `liquid-glass-cta`
 - **Category**: CTA
 - **Type**: cta
 - **Page Type**: hero
-- **ID**: `liquid-glass-cta`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏电影级CTA区域，HLS视频背景搭配液态玻璃质感，居中文字与双按钮，底部极简页脚栏。
 
-```
+### Prompt
 Build a "CTA + Footer" section component for a React + Vite + Tailwind CSS project. This is a cinematic full-width call-to-action section with an HLS video background, centered text, two CTA buttons, and a minimal footer bar at the bottom. Black background, white text, liquid glassmorphism effects.
 
 ---
@@ -5414,18 +5461,19 @@ Content sits at `z-10` above both the video and the fades.
 ### PARENT CONTEXT
 
 This section sits on a `bg-black` parent container as the last section of the page. The top gradient fade blends the video into the section above (which also has a black background). The footer bar is part of this same component -- there is no separate footer component.
-```
 
 ---
 
-## 49. LaunchEx About
-
+## LaunchEx About
+- **ID**: `launchex-about`
 - **Category**: About
 - **Type**: about
 - **Page Type**: hero
-- **ID**: `launchex-about`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深蓝背景的全屏“关于创始人”板块，左侧标题与右侧描述左右并排，简洁现代的企业介绍页面。
 
-```
+### Prompt
 --
 
 **Prompt to recreate the About section:**
@@ -5527,18 +5575,19 @@ This section sits on a `bg-black` parent container as the last section of the pa
 > - No animations beyond the hover lift on the external link icon button (`group-hover:-translate-y-0.5`)
 
 ---
-```
 
 ---
 
-## 50. Creative Studio
-
+## Creative Studio
+- **ID**: `creative-studio`
 - **Category**: Agency
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `creative-studio`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深紫色调全屏视频背景的创意工作室首页，包含品牌标志、导航菜单、核心标语和统计数据，采用Inter字体并适配移动端。
 
-```
+### Prompt
 Build a full-screen hero section using React, Tailwind CSS, Framer Motion, and Lucide React icons. Use the Inter font. The page is fully mobile-responsive. Here are the exact specifications:
 
 ---
@@ -5648,18 +5697,19 @@ All animations fire on page load (initial -> animate).
 - Tailwind CSS 3
 - framer-motion
 - lucide-react (ArrowUpRight, X icons)
-```
 
 ---
 
-## 51. AI Image Generator UI
-
+## AI Image Generator UI
+- **ID**: `ai-image-generator-ui`
 - **Category**: AI
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `ai-image-generator-ui`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 渐变三卡片布局的核心功能展示区，白色背景搭配金色至紫色渐变徽标，适合AI产品营销页面。
 
-```
+### Prompt
 Build a "Core Features" marketing section as a single centered component with three gradient cards. Use the Inter font family (weights 400, 500, 600) loaded from Google Fonts: `https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap`.
 
 **Page shell:**
@@ -5698,18 +5748,19 @@ Build a "Core Features" marketing section as a single centered component with th
 - Heading: "Project Library".
 
 **Note:** No animations are defined in this component — it is purely static styling. No JavaScript behavior, no hover effects. Use Supabase if any data persistence is needed, though this section requires none.
-```
 
 ---
 
-## 52. Creative Portfolio
-
+## Creative Portfolio
+- **ID**: `creative-portfolio`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `creative-portfolio`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏黑色背景的创意作品集首页，中央显示大号白色标题文字，搭配动态视频背景和简洁导航栏，营造沉浸式视觉冲击。
 
-```
+### Prompt
 626f6c742d63632d6167656e74Let me read all the relevant files to compile the full recreation prompt.
 Here's the full recreation prompt:
 
@@ -5803,18 +5854,19 @@ Container: `max-w-[1340px]`, full height, flex column, `justify-end items-end`, 
 - Semantic landmarks: `<header>`, `<main>`, `<nav>`, `<section>`
 - ARIA labels on navigation regions and status elements
 - Videos are `aria-hidden="true"`
-```
 
 ---
 
-## 53. Stillmind
-
+## Stillmind
+- **ID**: `stillmind`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `stillmind`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏电影级英雄区块，背景为四层循环视频渐变切换，搭配斜体衬线标志与极简导航，适用于冥想或专注类应用。
 
-```
+### Prompt
 Create a fullscreen cinematic hero section for a mindfulness/focus app called "Lumora" using React, Tailwind CSS, and Lucide React icons.
 
 ## Font
@@ -5944,18 +5996,19 @@ Black background prevents flash before videos load. Everything is a single viewp
 ---
 
 That's the complete specification. The entire app lives in a single `App.tsx` component with the CSS in `index.css`.
-```
 
 ---
 
-## 54. Equilibrium
-
+## Equilibrium
+- **ID**: `equilibrium`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `equilibrium`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏单页英雄区，液态玻璃质感叠加循环背景视频，搭配Geist字体与极简图标，营造沉浸科技感。
 
-```
+### Prompt
 Build a full-screen, single-page React + TypeScript + Vite + Tailwind CSS hero section with a "liquid glass" aesthetic on top of a looping background video. Use `lucide-react` for icons. No other UI libraries.
 
 **Font & Global CSS (`src/index.css`):**
@@ -6004,18 +6057,19 @@ Build a full-screen, single-page React + TypeScript + Vite + Tailwind CSS hero s
 **Animations/interactions:** all buttons use Tailwind `transition-colors`; liquid-glass effect uses `backdrop-filter: blur(4px)` plus the animated-looking gradient border pseudo. No additional keyframe animations. The background video itself provides motion.
 
 **Dependencies:** `react`, `react-dom`, `lucide-react`, `tailwindcss`, `vite`, `@vitejs/plugin-react`, TypeScript. Tailwind configured with default content globs for `./index.html` and `./src/**/*.{ts,tsx}`.
-```
 
 ---
 
-## 55. Blog Showcase
-
+## Blog Showcase
+- **ID**: `blog-showcase`
 - **Category**: Blog
 - **Type**: Blog
 - **Page Type**: hero
-- **ID**: `blog-showcase`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 摄影博客"Behind the Lens"展示区，白底居中布局，含灰色"Blog"徽章、大标题、副标题及圆角按钮，下方为全宽特色文章卡片。
 
-```
+### Prompt
 Build a "Behind the Lens" photography blog section with the following exact specifications:
 
 **Layout and Structure:**
@@ -6063,18 +6117,19 @@ Build a "Behind the Lens" photography blog section with the following exact spec
 - React + TypeScript + Vite + Tailwind CSS (for base resets only, use custom CSS for the blog styles)
 - Supabase JS client for data fetching
 - All videos use autoPlay, loop, muted, playsInline attributes
-```
 
 ---
 
-## 56. SaaS Value
-
+## SaaS Value
+- **ID**: `saas-value`
 - **Category**: SaaS
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `saas-value`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色渐变背景上展示SaaS产品"Questly"的全屏英雄区，中央突出品牌名称与价值主张，搭配简洁图标与清晰排版。
 
-```
+### Prompt
 Build a full-viewport hero section for a SaaS landing page called "Questly" using React, TypeScript, Tailwind CSS 3, and Vite. Use `lucide-react` for all icons. No other UI libraries.
 
 ---
@@ -6265,18 +6320,19 @@ src/
     Logo.tsx          -- SVG logo component
     DashboardMockup.tsx -- full browser-chrome dashboard mockup
 ```
-```
 
 ---
 
-## 57. IntelligentX
-
+## IntelligentX
+- **ID**: `intelligentx`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `intelligentx`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 以#EDEEF5为背景的现代着陆页，配有毛玻璃导航栏和品牌绿色高亮，展示优雅的排版与动画效果。
 
-```
+### Prompt
 Prompt:
 Build a modern React landing page using Vite, Tailwind CSS, and motion/react for elegant animations. The application must feature a highly polished, aesthetic hero section and a glassmorphic navigation bar.
 1. Typography & Global CSS (src/index.css)
@@ -6322,18 +6378,19 @@ Absolute middle right edge: Create a glassmorphic pill button for language switc
 Absolute bottom left corner: Place "2024" in small neat text.
 Absolute bottom right corner: Place "mental health tools" in small neat text.
 Ensure there are no artificial margins/padding below the video to make sure the video takes exactly 100% of the Hero viewport, while allowing the #EDEEF5 background base to anchor the entire page cleanly.
-```
 
 ---
 
-## 58. Portal
-
+## Portal
+- **ID**: `portal`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `portal`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 密码管理器登陆页英雄区，深色渐变背景搭配动态粒子效果，展示安全锁与数据流动画。
 
-```
+### Prompt
 Build a password manager landing page hero section using React, TypeScript, Tailwind CSS, Framer Motion, and Lucide React icons. Here is every specification:
 
 ---
@@ -6469,18 +6526,19 @@ visible: (i) => ({ opacity: 1, y: 0, transition: { delay: i * 0.15, duration: 0.
 - `lucide-react` (icons: ArrowRightCircle, Zap, LockKeyhole, Fingerprint, Menu, X)
 - Tailwind CSS 3 with default config, no custom theme extensions
 - Vite + TypeScript
-```
 
 ---
 
-## 59. Radial Diagram
-
+## Radial Diagram
+- **ID**: `radial-diagram`
 - **Category**: Testimonials
 - **Type**: testimonials
 - **Page Type**: hero
-- **ID**: `radial-diagram`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景上展示品牌策略的放射状图表，结合流畅滚动动画与DM Sans字体，呈现专业服务流程。
 
-```
+### Prompt
 Build an "Our Comprehensive Branding Approach" section as a React component using TypeScript, Tailwind CSS 3, and Framer Motion. The section sits on a dark background (`#0f0f0f`) with white text. Font is `'DM Sans', sans-serif` (loaded via Google Fonts: `https://fonts.googleapis.com/css?family=DM+Sans:500,400`). Here is the exact specification:
 
 ---
@@ -6594,18 +6652,19 @@ Build an "Our Comprehensive Branding Approach" section as a React component usin
 ---
 
 **Dependencies:** React 18, Framer Motion (v12+), Tailwind CSS 3. Uses `useState`, `useRef`, `useInView` from framer-motion, and `motion` components for all animations. No external animation libraries beyond Framer Motion.
-```
 
 ---
 
-## 60. Rocket CTA
-
+## Rocket CTA
+- **ID**: `rocket-cta`
 - **Category**: CTA
 - **Type**: cta
 - **Page Type**: hero
-- **ID**: `rocket-cta`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景上的毛玻璃CTA区块，使用半透明白色面板和模糊效果，搭配Inter字体和图标，营造现代科技感。
 
-```
+### Prompt
 Build a pixel-faithful recreation of the landing CTA section. Use React 18 + Vite + TypeScript, TailwindCSS, `framer-motion`, `clsx` + `tailwind-merge` as `cn()`. Dark theme background (`#000000`), Inter font, Material Symbols Outlined for icons. Use the white-alpha "landing" palette in `tailwind.config.ts`:
 
 ```ts
@@ -6792,18 +6851,19 @@ Markup:
 - [ ] Grass image loaded from Cloudinary URL (`https://res.cloudinary.com/dy5er7kv5/image/upload/q_auto/f_auto/v1780586778/cta-bg_mlwy5s.png`) sits at `z-30` over dashboard (`z-10`), pointer-events-none, full width.
 - [ ] FadeUp entrance order: heading (delay 1) → paragraph (0.1) → button (0.2).
 - [ ] PrimaryButton: white pill, black text, AnimatedText hover slide.
-```
 
 ---
 
-## 61. PROMPT
-
+## PROMPT
+- **ID**: `prompt-hero`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `prompt-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏滚动式时尚品牌首页，首屏全幅视频背景搭配悬浮UI，下方黑色面板上浮后展示散落产品网格，结尾白色遮罩浮现“查看”按钮。
 
-```
+### Prompt
 ### Overview
 
 Build a full-screen, scroll-driven fashion/archive landing page for a brand called "prmpt". The page has two main phases:
@@ -7028,18 +7088,19 @@ CRITICAL: Only update currentTime when !video.seeking -- this prevents jittery p
 - Videos hidden (`visibility: hidden`) once scroll passes first viewport height
 - Circle symbol randomizes on scroll (throttled to 80ms)
 - Entry animations staggered: logo (0s), nav (0.15s), caption (0.3s), product info (0.45s)
-```
 
 ---
 
-## 62. Guardnet Benefits
-
+## Guardnet Benefits
+- **ID**: `guardnet-benefits`
 - **Category**: Benefits
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `guardnet-benefits`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景的Guardnet Benefits板块，以白色细体大标题居中展示，下方排列多个简洁的权益卡片，适合企业服务或会员权益介绍页面。
 
-```
+### Prompt
 Build a single React + TypeScript section using Tailwind CSS. No extra libraries. Fully mobile-responsive. Black background, white text.
 
 ## Global Prerequisites
@@ -7153,18 +7214,19 @@ Key difference from Card 1: the paragraph uses `mt-auto` to pin it to the **bott
 - No hover states or JavaScript animations
 - All motion comes from the looping background video in Card 2
 - The bottom fade on the video blends seamlessly into the `neutral-950` card surface
-```
 
 ---
 
-## 63. AI Workflow Hero
-
+## AI Workflow Hero
+- **ID**: `ai-workflow`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `ai-workflow`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: AI工作流平台的品牌英雄区，深色渐变背景搭配发光粒子动效，中央展示产品名称与核心功能按钮。
 
-```
+### Prompt
 ### Stack
 
 - **Vite** + **React 18** + **TypeScript**
@@ -7625,18 +7687,19 @@ export default App;
   }
 }
 ```
-```
 
 ---
 
-## 64. NexaCore Results
-
+## NexaCore Results
+- **ID**: `nexacore-results`
 - **Category**: Features
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `nexacore-results`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 基于Tailwind CSS构建的精密数据展示区，桌面端采用阶梯式立柱布局，移动端切换为交替流动排版，使用Mazzard H字体呈现专业数据可视化效果。
 
-```
+### Prompt
 Build a single React + TypeScript + Tailwind CSS v3 component called `PrecisionSection`. No external icon libraries — all icons are inline SVG or `<img>` tags. No `useState`, no animations, no hover states. Two separate layouts: a desktop staircase (absolutely-positioned pillars) and a mobile alternating-flow layout. The `sm:` breakpoint controls visibility between them.
 
 ---
@@ -7958,18 +8021,19 @@ Text: the item string.
 ---
 
 **No animations. No hover states. No scroll effects. No JavaScript logic. Static render only. Desktop: 4 pillars arranged in a rising staircase via `position: absolute` with `bottom` and `left` in `vw` units. Mobile: single column, even-indexed pillars align left, odd-indexed align right, each with a vertical gradient line beside its items list.**
-```
 
 ---
 
-## 65. Tech-Forward
-
+## Tech-Forward
+- **ID**: `tech-forward`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `tech-forward`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏黑色极简英雄页，背景为全幅视频，顶部固定导航栏，底部内容区带白色渐变上浮效果。
 
-```
+### Prompt
 Create a full-screen hero section landing page using React, Vite, and Framer Motion (`motion` package). Use plain CSS (no Tailwind). The font is Inter (weights 300, 400, 500, 600) from Google Fonts. The design is minimal black-and-white with a full-viewport background video.
 
 **Stack:** React 19, Vite, `motion` (framer-motion), `lucide-react` (for the Plus icon).
@@ -8015,18 +8079,19 @@ Create a full-screen hero section landing page using React, Vite, and Framer Mot
 **Responsive (mobile-first, breakpoint at 768px):**
 - Mobile: navbar padding 16px, smaller buttons (28px circles), brand text hidden, tags hidden, right label hidden, footer stacks vertically, video at 80% size
 - Desktop (768px+): navbar padding 24px 32px, larger buttons (32px circles), all text/tags visible, footer is row layout, video fills 100%
-```
 
 ---
 
-## 66. Organic Odyssey
-
+## Organic Odyssey
+- **ID**: `organic-odyssey`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `organic-odyssey`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏电影级英雄区，深色背景上循环播放自然主题视频，搭配优雅衬线字体标题与简洁导航元素
 
-```
+### Prompt
 Create a full-screen cinematic hero section using React, Tailwind CSS, and Framer Motion. Use Vite with TypeScript. The dependencies required are: `react`, `react-dom`, `framer-motion`, `lucide-react`, and `tailwindcss`.
 
 **VIDEO BACKGROUND:**
@@ -8133,18 +8198,19 @@ Create a full-screen cinematic hero section using React, Tailwind CSS, and Frame
 - Uses Tailwind directives: @tailwind base/components/utilities
 
 **PAGE TITLE:** "Synthetic Nature"
-```
 
 ---
 
-## 67. Portfolio About
-
+## Portfolio About
+- **ID**: `portfolio-about`
 - **Category**: About
 - **Type**: about
 - **Page Type**: hero
-- **ID**: `portfolio-about`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 暗色全屏“关于我”页面，四角装饰月亮等浮动图标，居中展示个人简介，使用Kanit字体，风格简洁现代。
 
-```
+### Prompt
 **Prompt:**
 
 Create an "About Me" section using React, Tailwind CSS, and **framer-motion**. The site uses **Google Font "Kanit"** (weights 300-900) and a dark background `#0C0C0C`.
@@ -8241,18 +8307,19 @@ Vertical layout with `gap-16 sm:gap-20 md:gap-24`, containing two groups:
 CSS base: `font-family: 'Kanit', sans-serif` on html/body.
 
 ---
-```
 
 ---
 
-## 68. NexaCore Control
-
+## NexaCore Control
+- **ID**: `nexacore-control`
 - **Category**: Features
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `nexacore-control`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: HLS视频流播放组件，全屏自适应布局，集成自定义字体与内联SVG图标，适用于移动端视频展示。
 
-```
+### Prompt
 Build a single React + TypeScript + Tailwind CSS v3 component called `FreedomSection`. It uses `hls.js` for HLS video streaming and `useEffect` / `useRef` from React. No external icon libraries — all icons are inline SVG or `<img>` tags. Fully mobile-responsive. No hover states.
 
 ---
@@ -8539,18 +8606,19 @@ Contents:
 - Section background is pure white `#ffffff`
 - No animations, no hover states, no scroll effects
 
-```
 
 ---
 
-## 69. Wellness Balance
-
+## Wellness Balance
+- **ID**: `wellness-balance`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `wellness-balance`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: TerraElix品牌全屏健康产品着陆页，背景图铺满视口，导航栏、逐字动画标题、行动号召区及三栏页脚，适配移动端与桌面端。
 
-```
+### Prompt
 Create a single-page hero landing for a wellness/supplements brand called "TerraElix" using React + Tailwind CSS + Lucide React icons. The page is a full-viewport hero with a background image, navbar, headline with word-by-word reveal animations, CTA section, and a 3-panel footer strip. It must be fully responsive (mobile, tablet, desktop).
 
 ---
@@ -8754,18 +8822,19 @@ All use `cubic-bezier(0.16, 1, 0.3, 1)` easing with `both` fill mode.
 - Panel 2: animate-fade-up delay-1000
 - Panel 3: animate-fade-up delay-1100
 - Inline capsule image: animate-scale-in delay-1000
-```
 
 ---
 
-## 70. Email Landing Page
-
+## Email Landing Page
+- **ID**: `email-landing-page`
 - **Category**: Landing page
 - **Type**: landing
 - **Page Type**: landing
-- **ID**: `email-landing-page`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色玻璃质感邮件客户端"Aura"着陆页，配有全屏循环背景视频、渐变光泽标题和macOS风格菜单栏，展示逼真的收件箱界面与液态玻璃卡片设计。
 
-```
+### Prompt
 Build a premium, AI-native email client landing page called "Aura" using **React 18 + TypeScript + Vite + Tailwind CSS + motion/react (framer motion) + lucide-react**. The aesthetic is dark (bg `#0c0c0c`), cinematic, glassy, with a looping fullscreen background video, a shiny gradient headline, a macOS-style menu bar, a realistic inbox mockup, and a custom "liquid-glass" card treatment.
 
 ## Stack / setup
@@ -8999,18 +9068,19 @@ Pricing CSS (key values, include exactly):
 
 
 Reproduce exactly — fonts, gradient stops, noise filters, copy strings, animation delays, and the CloudFront video URL `https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260508_064122_c4750c0e-7476-4b44-94a2-a85a65c63bf2.mp4`.
-```
 
 ---
 
-## 71. Immersive Ocean
-
+## Immersive Ocean
+- **ID**: `immersive-ocean`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `immersive-ocean`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏视频背景英雄区，深蓝色海洋主题，顶部导航栏与移动菜单，居中渐显动画标题，适合创意工作室首页展示。
 
-```
+### Prompt
 Create a fullscreen hero landing page for a creative studio called "Foldcraft" using React, Tailwind CSS, and Lucide React icons. The page is a single viewport-height section with a looping background video, a responsive navbar, a mobile menu, and staggered-animated hero text.
 
 **Video Background:**
@@ -9082,18 +9152,19 @@ Create a fullscreen hero landing page for a creative studio called "Foldcraft" u
 ```
 
 **Dependencies:** React, lucide-react (ArrowRight, Menu, X), Tailwind CSS, Google Fonts Geist.
-```
 
 ---
 
-## 72. Contact Cybernetic
-
+## Contact Cybernetic
+- **ID**: `contact-cybernetic`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `contact-cybernetic`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景的现代英雄区，包含打字机动画标题和动态光标，适用于科技或创意品牌首页展示。
 
-```
+### Prompt
 Build a modern, interactive hero section using React, Tailwind CSS, and Framer Motion (motion/react). Ensure you follow these precise architecture and styling instructions:
 1. Fonts & Global Animations
 Import the Inter font from Google Fonts.
@@ -9149,18 +9220,19 @@ Pill inactive traits classes: bg-white text-[#1C2E1E] border border-[#F1F3F1] ho
 Contingent Feedback Status Banner: Underneath your service pills, write an <AnimatePresence mode="wait"> that tracks user state array length:
 Empty: Show a generic placeholder indicating "Please click to select services above." at fifty percent opacity (opacity: 0.5, italic, text-xs).
 Active Selection: Swap cleanly into a container <motion.div> that springs height gracefully (height: "auto"). Inside, display an acknowledgment banner reading "Ready to inquire about: [array.join(", ")]" combined with an arrow call-to-action button "Let's Go" (text-[#4D6D47] uppercase text-xs). Style the banner with bg-[#FAFBF9] border rounded-2xl.
-```
 
 ---
 
-## 73. Retro-Futurist
-
+## Retro-Futurist
+- **ID**: `retro-futurist`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `retro-futurist`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏复古未来主义创意机构主页，深色背景搭配霓虹光效与粗体标题，展现科技感与艺术张力。
 
-```
+### Prompt
 Build a full-screen hero landing page for a creative agency called "Mainframe" using React, TypeScript, Vite, and Tailwind CSS. Here is every detail:
 
 ---
@@ -9239,18 +9311,19 @@ BACKGROUND VIDEO (mouse-scrub controlled)
 DEPENDENCIES
 
 Only React, ReactDOM, Tailwind CSS, and Vite. No other UI libraries. Lucide-react is available but not used in this component.
-```
 
 ---
 
-## 74. Prosthetics Hero
-
+## Prosthetics Hero
+- **ID**: `prosthetics-hero`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `prosthetics-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景上全屏自动播放视频，叠加半透明前景内容，左侧展示品牌标志与简洁导航，适合医疗或科技品牌首页。
 
-```
+### Prompt
 Build a React + TypeScript + Tailwind CSS single-page hero section using Vite. The entire page lives in `src/App.tsx`. No extra libraries beyond `react`, `react-dom`, `lucide-react`, and Tailwind.
 
 **Background:**
@@ -9291,18 +9364,19 @@ Build a React + TypeScript + Tailwind CSS single-page hero section using Vite. T
 **Colors:** Page background `#f0f0ee`; pill backgrounds `#EDEDED`; accent `blue-500/600/400`; text `gray-900/700/400`.
 
 Do not add any other sections, no Supabase wiring, no routing. Only the single hero page as described.
-```
 
 ---
 
-## 75. Coffee Rewards
-
+## Coffee Rewards
+- **ID**: `coffee-rewards`
 - **Category**: Loyalty App
 - **Type**: mobile
 - **Page Type**: hero
-- **ID**: `coffee-rewards`
+- **Platform**: app
+- **Free/Premium**: Free
+- **Description**: 手机应用内咖啡会员档案页，深暖色调背景，顶部全宽循环视频，玻璃拟态UI元素，iOS风格设计
 
-```
+### Prompt
 Build a mobile coffee profile screen inside a phone mockup frame. Use vanilla HTML, CSS, and JS with Vite as the bundler. The design is dark/warm-toned, inspired by iOS profile screens with glassmorphic UI elements.
 
 **Phone mockup:**
@@ -9385,18 +9459,19 @@ Build a mobile coffee profile screen inside a phone mockup frame. Use vanilla HT
 ```
 
 **Responsive:** At 440px viewport, phone scales to zoom 0.6. Body flex-wraps at 900px.
-```
 
 ---
 
-## 76. 3D Collectible Hero
-
+## 3D Collectible Hero
+- **ID**: `3d-collectible-hero`
 - **Category**: 3D Website
 - **Type**: 3D Website
 - **Page Type**: hero
-- **ID**: `3d-collectible-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 以深色渐变背景展示4款3D角色手办轮播，中央大图搭配两侧半透明卡片，底部安东字体显示“TOONHUB”品牌名。
 
-```
+### Prompt
 Build a single full-viewport hero section in React + TypeScript + Vite + Tailwind CSS, using `lucide-react` for icons. The component is a character-figurine carousel called "TOONHUB".
 
 **Fonts (load in `index.html` head):**
@@ -9450,18 +9525,19 @@ Outer `<div>` has `backgroundColor: IMAGES[activeIndex].bg`, transition `backgro
 6. **Bottom-right link "DISCOVER IT"** (`absolute bottom-6 right-4 sm:bottom-20 sm:right-10`, zIndex 60): `<a>` flex items-center, font Anton, `fontSize: clamp(20px, 4vw, 56px)`, weight 400, white, opacity 0.95→1 on hover (200ms), letterSpacing `-0.02em`, lineHeight 1, uppercase, no underline. Followed by `ArrowRight` (`w-5 h-5 sm:w-8 sm:h-8`, strokeWidth 2.25).
 
 **Behavior summary:** clicking arrows rotates roles; background color, image positions, scales, blurs, and opacities all crossfade simultaneously over 650ms with `cubic-bezier(0.4,0,0.2,1)`. The character images sit at the bottom of the screen overlapping the giant "3D SHAPE" text behind them.
-```
 
 ---
 
-## 77. Celestial Renewal
-
+## Celestial Renewal
+- **ID**: `celestial-renewal`
 - **Category**: Wellness
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `celestial-renewal`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 奢华美容品牌“Serene”的着陆页，包含两个全屏区域，采用优雅字体与柔和色调，营造宁静高端的视觉体验。
 
-```
+### Prompt
 **Build a React + Vite + Tailwind CSS landing page with two full-screen sections for a luxury beauty/wellness brand called "Serene". Use TypeScript.**
 
 ---
@@ -9628,18 +9704,19 @@ progress = clamp(0, 1, (windowHeight - rect.top) / (windowHeight + rect.height))
 ### Tailwind Config
 
 Default Tailwind config with no extensions -- all custom styling handled via CSS utility classes in index.css.
-```
 
 ---
 
-## 78. Neo Museum
-
+## Neo Museum
+- **ID**: `neo-museum`
 - **Category**: Website
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `neo-museum`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 现代博物馆品牌官网，深色极简风格，搭配Inter无衬线字体与流畅的Motion动画，展示展览与藏品信息。
 
-```
+### Prompt
 Project Setup
 
 Stack: React 19 + Vite 6 + Tailwind CSS 4 + Motion (Framer Motion) + Lucide React icons + TypeScript
@@ -9941,18 +10018,19 @@ KEY DESIGN DETAILS
 - Spacing: 8px base system throughout.
 - Transitions: Most hover transitions 300-700ms. Button slide effect uses `cubic-bezier(0.16, 1, 0.3, 1)`. Letter animations use same cubic bezier.
 - The page is entirely a single `App.tsx` component plus the `SandTransitionImage` helper function in the same file.
-```
 
 ---
 
-## 79. Place Saver
-
+## Place Saver
+- **ID**: `place-saver`
 - **Category**: Travel
 - **Type**: mobile
 - **Page Type**: hero
-- **ID**: `place-saver`
+- **Platform**: app
+- **Free/Premium**: Free
+- **Description**: 双iPhone设备框架并排展示，白色动态岛和状态栏，中性灰背景自适应缩放，用于旅行应用预览。
 
-```
+### Prompt
 **Build a single-page HTML showcase displaying two iOS device frames (370x790px each) side by side on a neutral `#F4F4F4` stage. The stage auto-scales to fit the viewport using JS. Both phones have a Dynamic Island, status bar (time "11:11", signal/wifi/battery icons in white SVG), and a home indicator bar. Animations are gated behind video `loadeddata` events + font loading, with a 5s safety timeout.**
 
 ---
@@ -10121,18 +10199,19 @@ All paused until `.ze-ready` class is added to viewport (triggered when both vid
 **Reduced motion:** All animations disabled via `@media (prefers-reduced-motion: reduce)`.
 
 -
-```
 
 ---
 
-## 80. Nexto 404
-
+## Nexto 404
+- **ID**: `404`
 - **Category**: 404
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `404`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色太空背景，中央展示外星飞船插画，搭配大号404文字和简洁导航链接，营造科幻风格的错误页面。
 
-```
+### Prompt
 Build a 404 "Page Not Found" hero page as a single full-viewport (100vh, no scroll) React + Vite + Tailwind CSS application using the DM Sans font and Google Material Symbols Rounded icons. The page must match the following specification exactly:
 
 ---
@@ -10242,18 +10321,19 @@ Both are `background-attachment: fixed` and `no-repeat`.
 - Decorations even smaller
 
 ---
-```
 
 ---
 
-## 81. Pixel Grid Hover
-
+## Pixel Grid Hover
+- **ID**: `pixel-grid-hover`
 - **Category**: Case Studies
 - **Type**: blog
 - **Page Type**: hero
-- **ID**: `pixel-grid-hover`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 像素网格悬停效果的项目案例展示区，白色背景黑色文字，鼠标悬停时网格动画暂停。
 
-```
+### Prompt
 Build a "Projects / Case Studies" section as a React + TypeScript component using Tailwind CSS 3 and Framer Motion. Font is `'DM Sans', sans-serif` (Google Fonts: `https://fonts.googleapis.com/css?family=DM+Sans:500,400`). White background, black text. Here is the exact specification:
 
 ---
@@ -10380,18 +10460,19 @@ Build a "Projects / Case Studies" section as a React + TypeScript component usin
 ---
 
 **Dependencies:** React 18, Framer Motion (v12+), Tailwind CSS 3. Uses `useRef`, `useState`, `useCallback`, `useScroll`, `useTransform`, `useSpring`, `useMotionValue`, `useInView`, and `motion` from framer-motion. No other libraries.
-```
 
 ---
 
-## 82. Wellness Hero
-
+## Wellness Hero
+- **ID**: `wellness-hero`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `wellness-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏视频背景搭配AI健康伴侣品牌展示，视频自动循环播放并覆盖整个视口，中央叠加品牌标语与行动按钮。
 
-```
+### Prompt
 Build a full-screen hero section landing page for "Aurai" - an always-on AI wellness companion. The page is a single viewport-height section with a looping background video and overlaid content.
 
 ## Video Background
@@ -10488,18 +10569,19 @@ body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; -m
 - White text with `/70` opacity for secondary text
 - Rounded-full for buttons and inputs, rounded-2xl for containers
 - Page title: "Aurai - Always-On Wellness Companion"
-```
 
 ---
 
-## 83. Beauty Categories
-
+## Beauty Categories
+- **ID**: `beauty-categories`
 - **Category**: Categories
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `beauty-categories`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 白色背景上三列网格展示面部、身体等美容分类卡片，卡片带视频背景和悬停效果，适合美妆品牌分类导航。
 
-```
+### Prompt
 ---
 
 **Prompt to recreate the "Categories" section:**
@@ -10586,18 +10668,19 @@ body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; -m
 > - This section calls it with threshold `0.1`.
 
 ---
-```
 
 ---
 
-## 84. CozyPaws
-
+## CozyPaws
+- **ID**: `cozypaws`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `cozypaws`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 宠物商店品牌首页，浅薄荷绿背景搭配柔和渐变，中央展示宠物用品与品牌标语，营造温馨自然氛围。
 
-```
+### Prompt
 ## Prompt to Recreate CozyPaws Hero Section
 
 **Build a single-page "CozyPaws" pet store hero section using React, Tailwind CSS, and Lucide React icons. The layout is viewport-height (h-screen), no scroll, with three responsive breakpoints (mobile, tablet md, desktop lg+). Use Vite + TypeScript.**
@@ -10734,18 +10817,19 @@ All use `animation-fill-mode: both`. `.animate-word-pop` starts with `opacity: 0
 - All responsive layouts use show/hide (`hidden lg:flex`, etc.), not CSS-only media queries
 - Extensive use of `clamp()` for fluid typography and spacing
 - Lucide icons used: Search, ShoppingCart, Star, ArrowUpRight, Play, ArrowRight, Plus
-```
 
 ---
 
-## 85. Visual Hero
-
+## Visual Hero
+- **ID**: `visual-hero`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `visual-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏黑色背景英雄区，使用GSAP动画展示大标题与装饰元素，适合品牌首页视觉焦点。
 
-```
+### Prompt
 **Build a fullscreen hero section in a Vite + React + TypeScript + Tailwind CSS project. Use `gsap` and `lucide-react`. No other UI libraries.**
 
 ### Fonts (in `src/index.css`)
@@ -10908,18 +10992,19 @@ Root: `<div className="min-h-screen bg-black text-white font-body overflow-x-hid
 - Tailwind default border-radius is overridden to `9999px` (full pill) — every `rounded` in the markup produces pill corners.
 - Do NOT use `video.currentTime` to reverse — the boomerang uses the captured `frames[]` array only.
 - The video element stays mounted (hidden once `framesReady`) so the canvas keeps drawing snapshots.
-```
 
 ---
 
-## 86. FAQ CTA
-
+## FAQ CTA
+- **ID**: `faq-cta`
 - **Category**: CTA
 - **Type**: cta
 - **Page Type**: hero
-- **ID**: `faq-cta`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色渐变背景的CTA卡片，搭配可展开的FAQ手风琴和简洁页脚，适合营销落地页。
 
-```
+### Prompt
 **PROMPT:**
 
 Build a React + TypeScript + Vite + Tailwind CSS page with a "CTA + FAQ + Footer" section using the **Inter** font. Use `lucide-react` for icons (`ChevronDown`, `ChevronUp`). No other UI libraries.
@@ -11073,18 +11158,19 @@ Add to `index.html` `<head>`: Google Fonts Inter preconnect + stylesheet link:
 - Gradient uses five colors: base `#ff8e53`, blobs `#fff1aa`, `#ff4b2b`, `#8aff8a`, `#ffd000`, `#ff1493`.
 - Animation uses CSS `@property` for GPU-friendly custom-property interpolation — this is the modern standard for animated CSS gradients (no JS, no canvas).
 - Blobs travel wide paths and pulse in radius; durations 3–6.5s, each offset for organic motion.
-```
 
 ---
 
-## 87. Vision Reveal
-
+## Vision Reveal
+- **ID**: `vision-reveal`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `vision-reveal`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景上浮现渐变光晕与动态文字，营造沉浸式品牌展示首页。
 
-```
+### Prompt
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11533,18 +11619,19 @@ html, body {
 </script>
 </body>
 </html>
-```
 
 ---
 
-## 88. Rocket Pricing
-
+## Rocket Pricing
+- **ID**: `rocket-pricing`
 - **Category**: Pricing
 - **Type**: pricing
 - **Page Type**: hero
-- **ID**: `rocket-pricing`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景的定价页面，使用卡片式布局展示不同套餐，包含价格、功能列表和行动按钮，适合SaaS产品定价展示。
 
-```
+### Prompt
 Build a `PricingSection` React component that matches the spec below exactly.
 
 ## Stack & global setup
@@ -11749,18 +11836,19 @@ const plans: Plan[] = [
 - Inner card `FadeUp` stagger: 0, 0.1, 0.2, 0.3, 0.4.
 - Buttons link to `/auth?mode=signup`.
 - All colors via HSL tokens / declared landing surface tokens; never hardcode hex outside the two card backgrounds and `#000000`.
-```
 
 ---
 
-## 89. Tech-Noir About
-
+## Tech-Noir About
+- **ID**: `tech-noir-about`
 - **Category**: About
 - **Type**: about
 - **Page Type**: hero
-- **ID**: `tech-noir-about`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 纯红色全屏背景，居中展示品牌名称与简介，极简科技风格关于页面。
 
-```
+### Prompt
 ---
 
 ## Prompt
@@ -11860,18 +11948,19 @@ A 100px gradient overlay at the top of the video fades from `#FF0000` to transpa
 | Bottom video | `https://res.cloudinary.com/daklr2whx/video/upload/v1778602552/track-video_2_s9lp53.mp4` |
 
 Hosted on **Cloudinary**.
-```
 
 ---
 
-## 90. Health Portal
-
+## Health Portal
+- **ID**: `health-portal`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `health-portal`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 牙科诊所单页着陆页，包含全屏分区、启动画面和固定导航栏，采用React+Tailwind构建的现代医疗健康界面。
 
-```
+### Prompt
 Create a single-page dental clinic landing page using **React + Vite + TypeScript + Tailwind CSS**. No external UI libraries, no icon libraries. Everything lives in one `App.tsx` file. The page has 3 full-screen sections, a splash screen, and a fixed navbar.
 
 ---
@@ -12179,18 +12268,19 @@ The entire app is wrapped in `<div className="bg-white">` containing:
 - **Interactions:** `hover:scale-105 transition-transform` on CTA buttons.
 - **Responsive:** Single `md:` (768px) breakpoint. Stacked on mobile, grid on desktop.
 - **No external packages** beyond React and Tailwind.
-```
 
 ---
 
-## 91. Orbis Hello
-
+## Orbis Hello
+- **ID**: `orbis-hello`
 - **Category**: About
 - **Type**: about
 - **Page Type**: hero
-- **ID**: `orbis-hello`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景上展示粗体无衬线标题与手写体装饰文字，搭配霓虹绿点缀，营造现代简约的关于页面。
 
-```
+### Prompt
 ---
 
 > **Setup requirements before building the section:**
@@ -12276,18 +12366,19 @@ The entire app is wrapped in `<div className="bg-white">` containing:
 > **There are no animations, transitions, hover effects, scroll effects, or JavaScript interactions in this section.** It is purely a static layout with a looping background video. The only "motion" comes from the autoplaying video itself.
 
 ---
-```
 
 ---
 
-## 92. Digital Experiences
-
+## Digital Experiences
+- **ID**: `digital-experiences`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `digital-experiences`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 暗黑电影风格网页设计首页，全屏视差滚动展示液态玻璃质感UI元素，搭配模糊渐变动画营造沉浸式数字体验。
 
-```
+### Prompt
 ## Prompt
 
 Build a single-page React + Vite + TypeScript + Tailwind CSS site with exactly two full-screen sections (Hero and Capabilities). The page is a dark, cinematic web design agency landing page with "liquid glass" morphism UI elements and smooth blur/fade animations using Framer Motion.
@@ -12443,18 +12534,19 @@ A word-by-word staggered blur-in animation component using Framer Motion:
 - Typography: heading font is always italic with very tight tracking (negative), body font is light weight
 - Responsive: nav links hidden on mobile, grid collapses to single column, text sizes scale with breakpoints
 - Animations: staggered blur-in on load for hero content, intersection-triggered for BlurText
-```
 
 ---
 
-## 93. Stark Minimal Footer
-
+## Stark Minimal Footer
+- **ID**: `stark-minimal-footer`
 - **Category**: Footer
 - **Type**: footer
 - **Page Type**: hero
-- **ID**: `stark-minimal-footer`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深黑背景的航空科技页脚，顶部有动态飘移的装饰圆点带，四栏导航网格搭配超大品牌文字和版权信息行。
 
-```
+### Prompt
 ---
 
 Build a **Site Footer** for an aerospace company called "EngineTech." This is a black-background footer with an animated dotted top border, a four-column nav grid with a large heading, an oversized wordmark brand row, and a legal line.
@@ -12609,18 +12701,19 @@ Contents:
 **Anchor reset:** `a { color: inherit; text-decoration: none; }`.
 
 **Color palette:** No purple or violet. Pure black `#000000` background, pure white `#ffffff` text, with `rgb(255 255 255 / 0.88)` for nav links, `rgb(255 255 255 / 0.55)` / `0.45` / `0.35` for the dot pattern, and `rgb(255 255 255 / 0.52)` for legal text.
-```
 
 ---
 
-## 94. Nike Hover
-
+## Nike Hover
+- **ID**: `nike-hover`
 - **Category**: Features
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `nike-hover`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏 Nike 品牌展示区，鼠标移动触发聚光灯动画，揭示隐藏图像，适配移动端。
 
-```
+### Prompt
 Create a single full-viewport (`h-[100dvh]`) Nike-branded section in React + Tailwind CSS + GSAP. It must be **fully mobile responsive**. The app requires `react-player` and `gsap` installed via npm.
 
 ---
@@ -12926,18 +13019,19 @@ const [isSecondVideoPlaying, setIsSecondVideoPlaying] = useState(false);
 Controlled by the invisible hover zones. On mobile, default to `true` (auto-play) or use `onTouchStart`/`onTouchEnd`.
 
 ---
-```
 
 ---
 
-## 95. Audio Showcase
-
+## Audio Showcase
+- **ID**: `audio-showcase`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `audio-showcase`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色全屏视频背景上，居中展示黑胶唱片厂牌名"quietpress"与播放图标，营造沉浸式音乐品牌氛围。
 
-```
+### Prompt
 Build a full-screen hero section for a fictional vinyl record label called **"quietpress"** using React, TypeScript, Tailwind CSS, and Vite. The page is a single viewport-height hero with no scrolling. Use **lucide-react** for icons. No other UI libraries.
 
 ---
@@ -13083,18 +13177,19 @@ Positioned `absolute bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:righ
 - All interactive elements use `transition-transform duration-200`.
 - The accent color throughout is Tailwind's `blue-700`.
 - No Supabase or backend needed -- this is purely a static hero.
-```
 
 ---
 
-## 96. Animated Cards
-
+## Animated Cards
+- **ID**: `animated-cards`
 - **Category**: Component
 - **Type**: carousel
 - **Page Type**: hero
-- **ID**: `animated-cards`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 3D圆柱形卡片轮播，支持鼠标拖拽旋转和视差倾斜，卡片具有立体厚度效果，适合展示高级银行卡或会员卡。
 
-```
+### Prompt
 Create a high-performance, interactive 3D horizontal cylinder carousel showing premium animated bank cards.
 Core Features & Interactions:
 Use React (useState, useEffect, useRef), Tailwind CSS v4, and standard requestAnimationFrame for a smooth 60fps render loop. No external animation libraries needed.
@@ -13623,18 +13718,19 @@ export default function App() {
 534:     </div>
 535:   );
 536: }
-```
 
 ---
 
-## 97. Arceage Stats
-
+## Arceage Stats
+- **ID**: `arceage-stats`
 - **Category**: Stats
 - **Type**: stats
 - **Page Type**: hero
-- **ID**: `arceage-stats`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景的响应式统计数据显示区，使用Barlow和Instrument Serif字体，展示关键数据指标。
 
-```
+### Prompt
 Create a React + Tailwind CSS v4 + Motion (framer-motion successor) stats section component. Use Vite as the bundler. The section should be fully mobile responsive.
 
 ### Fonts
@@ -13758,18 +13854,19 @@ A reusable character-by-character reveal animation triggered on scroll:
 - Video mask: `max-w-[500px]` on mobile, full width at `lg:` with `lg:w-[120%]`
 
 ---
-```
 
 ---
 
-## 98. Neon Logic
-
+## Neon Logic
+- **ID**: `neon-logic`
 - **Category**: Landing Page
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `neon-logic`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 黑底白字的全屏视频背景单页，用Space Mono等宽字体展示神经AI界面产品SynapseX，科技感强烈。
 
-```
+### Prompt
 Build a single-page landing site for "SynapseX" -- a futuristic neural-AI interface product. The entire site uses a black background with white text and full-viewport video backgrounds. The primary font is "Space Mono" (monospace) for all text. Use React + TypeScript + Vite + Tailwind CSS + Framer Motion.
 
 ### Fonts & External Assets
@@ -13961,18 +14058,19 @@ M 1.5,23 L 1.5,33 C 1.5,38.5 6,43 11.5,43 L 16.5,43 C 22,43 26.5,38.5 26.5,33 Q 
 - No external state management, no routing, no database -- pure single-page React app.
 
 ---
-```
 
 ---
 
-## 99. Wanderful Hero
-
+## Wanderful Hero
+- **ID**: `wanderful-hero`
 - **Category**: Travel
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `wanderful-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏旅行品牌英雄区，黑色背景上播放视频，搭配醒目大字标题和动态动画效果。
 
-```
+### Prompt
 Build a full-viewport cinematic hero section for a travel brand called "Wanderful" using React + TypeScript + Vite + Tailwind CSS. Use GSAP for animation and `lucide-react` for icons.
 
 **Fonts (load via Google Fonts in `src/index.css`):**
@@ -14049,18 +14147,19 @@ Fade-in on mount: `opacity 0 → 100` and `translate-y-6 → 0` with `transition
 **Root container:** `min-h-screen bg-black text-white overflow-x-hidden` with inline `fontFamily: "'Inter', sans-serif"`.
 
 Dependencies: `gsap`, `lucide-react`, `react`, `react-dom`, tailwind configured with content globs `./index.html` and `./src/**/*.{js,ts,jsx,tsx}`.
-```
 
 ---
 
-## 100. Cybersecurity Hero
-
+## Cybersecurity Hero
+- **ID**: `cybersecurity-hero`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `cybersecurity-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色背景上的网络安全产品落地页，包含渐变粉紫弧线装饰的圆角卡片、动态图标流水线和五枚单色品牌标志。
 
-```
+### Prompt
 Build a **single-page React + TypeScript (Vite)** landing hero for a product called **"Xero"** that recreates the following section exactly. Use the **Inter** Google Font (weights 300, 400, 500, 600, 700, 800). Do not use Tailwind utility classes for the hero — write plain CSS in a global stylesheet. No purple/indigo branding outside the specified pink-magenta gradient arc.
 
 ## Layout & Structure
@@ -14291,18 +14390,19 @@ Five `.brand-item` blocks (each: flex, gap 10, color `rgba(255,255,255,0.35)`, f
 - `1000-1001` — mobile nav overlay and toggle
 
 Implement all of the above exactly. Use `useRef` for the pipeline, the three nodes, both beam paths, the gradient, and the splash. Use one `useEffect` to set up the resize listener and the `requestAnimationFrame` loop, and clean both up on unmount.
-```
 
 ---
 
-## 101. Aurora Onboard
-
+## Aurora Onboard
+- **ID**: `aurora-onboard`
 - **Category**: Signup
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `aurora-onboard`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: Aurora 注册界面，双栏布局，深色背景搭配品牌灰色，使用 Inter 字体，带有平滑过渡动画和图标元素。
 
-```
+### Prompt
 Please build a modern, two-column registration interface called "Aurora Sign Up". Use React, Tailwind CSS (v4), `motion/react` (for animations), and `lucide-react` (for icons). The app should be contained entirely in `App.tsx` and `index.css`.
 
 ### 1. Global Setup & CSS (`index.css`)
@@ -14352,18 +14452,19 @@ Create these exact functional components at the bottom of the file:
 3. **`<InputGroup>`**: Takes `label`, `placeholder`, and `type`. The label is `text-sm font-medium text-white`. The input is `bg-brand-gray border-none rounded-xl h-11 px-4 text-white placeholder:text-white/20 focus:ring-2 focus:ring-white/20`.
 
 Ensure the final code uses `export default function App()` at the top.
-```
 
 ---
 
-## 102. Network Hero
-
+## Network Hero
+- **ID**: `network-hero`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `network-hero`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色全屏背景上，左侧展示营销人才平台文案与按钮，右侧浮动动画圆圈，底部品牌标志滚动条，营造专业科技感。
 
-```
+### Prompt
 Create a single-page React + Vite landing page for "Marketeam" -- a marketing talent platform. Use Inter (400, 500, 600, 700) and Urbanist (600, 700) from Google Fonts. The page is a full-viewport hero with a header, left content area, right animated circles visualization, and a bottom logo ticker strip.
 
 ---
@@ -14475,18 +14576,19 @@ Applied as `background: url(...) center center / cover no-repeat` on the root `.
 - `TypewriterHeading` component: types char by char at configurable speed
 - CSS `@property --border-angle` for the animated border gradient
 - No external animation libraries -- pure CSS animations + JS for typewriter/counter
-```
 
 ---
 
-## 103. Build With Us
-
+## Build With Us
+- **ID**: `build-with-us`
 - **Category**: Contact us
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `build-with-us`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏视频背景的卡片式着陆页，包含联系表单，采用圆角大卡片设计，视频自动播放并覆盖整个卡片区域。
 
-```
+### Prompt
 Build a single-page React + TypeScript + Vite + Tailwind site that is a full-screen video-background landing page with a contact form. Use `lucide-react` for icons.
 
 **Layout & Sizing**
@@ -14565,18 +14667,19 @@ Build a single-page React + TypeScript + Vite + Tailwind site that is a full-scr
 - `src/App.tsx` — entire component plus `SocialBtn` helper.
 - `src/index.css` — Google Fonts import + Tailwind directives + global `* { font-family: 'Inter', sans-serif; }`.
 - Standard Vite + Tailwind config (`tailwind.config.js` scanning `./index.html` and `./src/**/*.{ts,tsx}`).
-```
 
 ---
 
-## 104. Impact Ventures
-
+## Impact Ventures
+- **ID**: `impact-ventures`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `impact-ventures`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏英雄区，使用Instrument Serif和Inter字体，包含动画汉堡菜单，适用于设计工作室首页。
 
-```
+### Prompt
 Create a fullscreen hero landing page section for a design agency called "Atelier" using React, Tailwind CSS, and Lucide React icons. The section must be fully mobile responsive with an animated hamburger mobile menu. Here are the exact specifications:
 
 **Fonts (Google Fonts):**
@@ -14656,18 +14759,19 @@ html, body, #root {
 ```
 
 **Dependencies:** React, lucide-react (for ArrowRight and Play icons), Tailwind CSS. No other UI libraries.
-```
 
 ---
 
-## 105. Halo Use Case
-
+## Halo Use Case
+- **ID**: `halo-use-case`
 - **Category**: Use Case
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `halo-use-case`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 稳定币落地页的“使用案例”区块，采用React+TypeScript+Tailwind CSS构建，以卡片网格展示应用场景，并配有ArrowRight图标引导点击。
 
-```
+### Prompt
 **Prompt:**
 
 Build a "Use Cases" section for a fintech stablecoin landing page using **React + TypeScript + Tailwind CSS** with **lucide-react** for icons (use `ArrowRight`). Make it fully mobile responsive.
@@ -14844,18 +14948,19 @@ function UseCasesSection() {
 ```
 
 ---
-```
 
 ---
 
-## 106. Daisy Wild
-
+## Daisy Wild
+- **ID**: `daisy-wild`
 - **Category**: Product
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `daisy-wild`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 左右分屏布局，左侧循环播放产品视频，右侧亮绿色背景展示产品信息，移动端上下堆叠且产品面板在上方。
 
-```
+### Prompt
 Build a standalone React + TypeScript + Tailwind CSS section component. This is a fragrance product showcase split into two halves: a looping video on the LEFT and a lime-green product panel on the RIGHT. On mobile it stacks vertically with the product panel ABOVE the video (achieved via `flex-col-reverse`). Every value below is exact.
 
 ## Tech Stack
@@ -15144,18 +15249,19 @@ None in this section.
 | Product size | 100 ml / 3.3 oz | 100 ml / 3.3 oz |
 | Video URL | `...151802_1bbf9a81...` | `...151818_65bb22c5...` |
 | Notes content | Fruity top / WHITE RASPBERRIES, Floral heart / DAISY TREE PETALS, Feminine base / SUGAR MUSKS | Top / BANANA BLOSSOM ACCORD, Heart / CHOCOLATE DAISY ACCORD, Base / VETIVER OIL |
-```
 
 ---
 
-## 107. Cognitra Feature
-
+## Cognitra Feature
+- **ID**: `cognitra-feature`
 - **Category**: Feature
 - **Type**: features
 - **Page Type**: hero
-- **ID**: `cognitra-feature`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏透明视差区块，背景为固定循环视频，内容垂直居中展示，营造沉浸式视觉体验。
 
-```
+### Prompt
 ---
 
 **Prompt:**
@@ -15238,18 +15344,19 @@ export function FadeUp({
 **Tech stack:** React 18, TypeScript, Vite, Tailwind CSS 3, Framer Motion 12.
 
 ---
-```
 
 ---
 
-## 108. No-Code Waitlist
-
+## No-Code Waitlist
+- **ID**: `no-code-waitlist`
 - **Category**: Waitlist
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `no-code-waitlist`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 全屏暗色英雄页，黑色背景搭配全屏视频，玻璃态导航栏居中，邮件输入框引导用户加入等待列表。
 
-```
+### Prompt
 Build a full-screen dark hero section landing page in React + Vite + Tailwind CSS v4 + Motion (framer-motion) + Lucide React icons + hls.js. The page should be a single screen (100vh, no scroll) with a black background, a fullscreen background video, a glassmorphism navbar, and a centered hero with an email capture CTA.
 >
 > **Dependencies:** `react`, `react-dom`, `motion`, `hls.js`, `lucide-react`, `tailwindcss` v4 with `@tailwindcss/vite`, `@vitejs/plugin-react`
@@ -15302,18 +15409,19 @@ Build a full-screen dark hero section landing page in React + Vite + Tailwind CS
 ---
 
 Key clarification: The video URL is **not** from CloudFront. It is an HLS stream hosted on **Mux**: `https://stream.mux.com/kimF2ha9zLrX64H00UgLGPflCzNtl1T0215MlAmeOztv8.m3u8`. The `.m3u8` format requires hls.js for non-Safari browsers.
-```
 
 ---
 
-## 109. VaultShield
-
+## VaultShield
+- **ID**: `vaultshield`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `vaultshield`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深紫色渐变背景的全屏密码管理器首页，中央显示品牌名称与动态安全图标，搭配流畅动画营造专业可信赖感。
 
-```
+### Prompt
 Create a fullscreen hero section for a password manager app called "VaultShield" using React, TypeScript, Tailwind CSS, Framer Motion, and Lucide React icons.
 
 ---
@@ -15434,18 +15542,19 @@ visible: { opacity: 1, y: 0, transition: { delay: i * 0.15, duration: 0.6, ease:
 ---
 
 That is every detail needed to reproduce the hero section exactly as built.
-```
 
 ---
 
-## 110. Subscription Agency
-
+## Subscription Agency
+- **ID**: `subscription-agency`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `subscription-agency`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 极简黑白风格创意机构首页，固定导航栏搭配大标题与副文本，负字距营造现代感，适合品牌展示。
 
-```
+### Prompt
 **Create a single-page landing hero section for a creative agency called "Alwayzz" with a React + Vite + Tailwind CSS setup. Use custom CSS (not Tailwind utilities) for all styling. The design should be minimal, clean, black-and-white, with tight negative letter-spacing throughout.**
 
 ---
@@ -15574,18 +15683,19 @@ The book button avatar URL (exact):
 https://framerusercontent.com/images/hfneFL6CHBi5BnNvCeOaqU9HqE4.png
 ```
 ]
-```
 
 ---
 
-## 111. Wellbeing OS
-
+## Wellbeing OS
+- **ID**: `wellbeing-os`
 - **Category**: Hero
 - **Type**: hero
 - **Page Type**: hero
-- **ID**: `wellbeing-os`
+- **Platform**: website
+- **Free/Premium**: Free
+- **Description**: 深色视频背景的全屏SaaS产品首屏，中央显示"flowpath"品牌名，搭配柔和遮罩层营造沉浸式科技感。
 
-```
+### Prompt
 Create a fullscreen hero section for a SaaS product called "flowpath" using React, Tailwind CSS, and Lucide React icons. The section should be a single `<section>` filling the viewport (`h-screen w-full overflow-hidden`).
 
 **Background:**
@@ -15668,18 +15778,19 @@ Create a fullscreen hero section for a SaaS product called "flowpath" using Reac
 - The entire section is fully responsive with breakpoints at sm, md, lg, xl
 - No external UI libraries beyond Lucide React for icons
 - Tailwind config is default with no extensions
-```
 
 ---
 
-## 112. Wellness Companion
-
+## Wellness Companion
+- **ID**: `wellness-companion`
 - **Category**: Wellness
 - **Type**: mobile
 - **Page Type**: hero
-- **ID**: `wellness-companion`
+- **Platform**: app
+- **Free/Premium**: Free
+- **Description**: 手机健康问答界面，采用真实手机模型居中展示，背景为自然风景图，顶部有黑色药丸形灵动岛。
 
-```
+### Prompt
 Build a mobile wellness quiz screen inside a realistic phone frame mockup, centered on a white page. Use React with Tailwind CSS and Lucide React icons.
 
 **Phone Frame:**
@@ -15748,18 +15859,19 @@ Build a mobile wellness quiz screen inside a realistic phone frame mockup, cente
 
 **Dependencies:**
 - React 18, Tailwind CSS 3, Lucide React, Vite, TypeScript
-```
 
 ---
 
-## 113. Travel Journal
-
+## Travel Journal
+- **ID**: `travel-journal`
 - **Category**: Travel
 - **Type**: mobile
 - **Page Type**: hero
-- **ID**: `travel-journal`
+- **Platform**: app
+- **Free/Premium**: Free
+- **Description**: 手机旅行日记应用界面，采用真实iPhone手机壳样式居中展示，深色背景搭配圆角边框和动态岛设计，适合旅行记录场景。
 
-```
+### Prompt
 Create a mobile travel app UI mockup displayed inside a realistic iPhone-style phone frame, centered on a white webpage. Tech stack: React + TypeScript, Tailwind CSS, Lucide React icons, Vite. Font: Google Fonts "Inter" (weights 300-900).
 
 ---
@@ -15905,18 +16017,19 @@ Load in HTML head:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 ```
-```
 
 ---
 
-## 114. Cross-Border
-
+## Cross-Border
+- **ID**: `cross-border`
 - **Category**: Transportation
 - **Type**: mobile
 - **Page Type**: hero
-- **ID**: `cross-border`
+- **Platform**: app
+- **Free/Premium**: Free
+- **Description**: 面向物流公司的移动端着陆页，深色主题，iPhone 15 Pro 模拟框内展示，含动态岛和主页指示器，支持滚动内容。
 
-```
+### Prompt
 Create a mobile-first logistics company landing page for "CARGOX GROUP" displayed inside an iPhone 15 Pro mockup frame. Use React, TypeScript, Tailwind CSS, and the `motion` library (motion/react) for animations. Use Vite as the build tool.
 
 ## Structure
@@ -16034,7 +16147,5 @@ https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_2026062
   "react-dom": "^18.3.1"
 }
 ```
-```
 
 ---
-

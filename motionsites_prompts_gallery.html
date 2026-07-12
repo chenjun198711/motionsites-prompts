@@ -238,6 +238,48 @@
       background: var(--surface-hover);
     }
 
+    .platform-group {
+      display: inline-flex;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+
+    .platform-group button {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 11px 16px;
+      cursor: pointer;
+      transition: color var(--transition), background var(--transition);
+    }
+
+    .platform-group button:hover {
+      color: var(--text);
+      background: var(--surface-hover);
+    }
+
+    .platform-group button.active {
+      color: #fff;
+      background: var(--accent);
+    }
+
+    .badge-platform-app {
+      background: rgba(59, 130, 246, 0.12);
+      color: #93c5fd;
+      border-color: rgba(59, 130, 246, 0.25);
+    }
+
+    .badge-platform-website {
+      background: rgba(236, 72, 153, 0.12);
+      color: #f9a8d4;
+      border-color: rgba(236, 72, 153, 0.25);
+    }
+
     #status {
       margin-top: 24px;
       font-size: 0.95rem;
@@ -405,6 +447,18 @@
       border-color: var(--border);
       text-transform: lowercase;
       font-weight: 600;
+    }
+
+    .badge-platform-app {
+      background: rgba(59, 130, 246, 0.12);
+      color: #93c5fd;
+      border-color: rgba(59, 130, 246, 0.25);
+    }
+
+    .badge-platform-website {
+      background: rgba(236, 72, 153, 0.12);
+      color: #f9a8d4;
+      border-color: rgba(236, 72, 153, 0.25);
     }
 
     .badge-free {
@@ -726,8 +780,8 @@
       .header-inner { flex-direction: column; align-items: flex-start; }
       #controls { flex-direction: column; align-items: stretch; }
       .control-group { width: 100%; }
-      .search-box, select, .tier-group, .clear-btn { width: 100%; }
-      .tier-group button { flex: 1; }
+      .search-box, select, .tier-group, .platform-group, .clear-btn { width: 100%; }
+      .tier-group button, .platform-group button { flex: 1; }
       #gallery { grid-template-columns: 1fr; gap: 16px; }
       .prompt-card { padding: 18px; }
     }
@@ -763,6 +817,12 @@
             <path d="m21 21-4.3-4.3"></path>
           </svg>
           <input type="text" id="search" placeholder="搜索标题、分类、类型…" autocomplete="off">
+        </div>
+
+        <div class="control-group platform-group" id="platform-group">
+          <button data-platform="all" class="active">全部</button>
+          <button data-platform="website">Website</button>
+          <button data-platform="app">App</button>
         </div>
 
         <div class="control-group">
@@ -853,6 +913,7 @@
       categoryFilter: document.getElementById('category-filter'),
       typeFilter: document.getElementById('type-filter'),
       tierGroup: document.getElementById('tier-group'),
+      platformGroup: document.getElementById('platform-group'),
       clearBtn: document.getElementById('clear-btn'),
       emptyState: document.getElementById('empty-state'),
       toast: document.getElementById('toast'),
@@ -912,8 +973,12 @@
       });
 
       const total = allPrompts.length;
+      const appCount = allPrompts.filter(p => p.platform === 'app').length;
+      const websiteCount = allPrompts.filter(p => p.platform === 'website').length;
       els.counter.querySelector('strong').textContent = total;
       els.counter.querySelector('span').textContent = total;
+      document.querySelector('.brand p').textContent =
+        `${total} 个可一键复制的 AI 设计提示词（${websiteCount} 个 Website · ${appCount} 个 App）`;
     }
 
     function escapeHtml(str) {
@@ -933,12 +998,15 @@
 
       const tierClass = prompt.is_free ? 'badge-free' : 'badge-premium';
       const tierText = prompt.is_free ? '免费' : '付费';
+      const platformClass = prompt.platform === 'app' ? 'badge-platform-app' : 'badge-platform-website';
+      const platformText = prompt.platform === 'app' ? 'App' : 'Website';
 
       article.innerHTML = `
         <span class="card-number">${originalIndex + 1}</span>
         <div class="card-header">
           <h2 class="card-title">${escapeHtml(prompt.title)}</h2>
           <div class="badge-row">
+            <span class="badge ${platformClass}">${platformText}</span>
             <span class="badge badge-category">${escapeHtml(prompt.category || '-')}</span>
             <span class="badge badge-type">${escapeHtml(prompt.type || '-')}</span>
             <span class="badge ${tierClass}">${tierText}</span>
@@ -972,6 +1040,7 @@
       const category = els.categoryFilter.value;
       const type = els.typeFilter.value;
       const tier = els.tierGroup.querySelector('.active')?.dataset.tier || 'all';
+      const platform = els.platformGroup.querySelector('.active')?.dataset.platform || 'all';
 
       return allPrompts.filter(p => {
         const matchesTerm = !term ||
@@ -985,8 +1054,9 @@
         const matchesTier = tier === 'all' ||
           (tier === 'free' && p.is_free) ||
           (tier === 'premium' && !p.is_free);
+        const matchesPlatform = platform === 'all' || p.platform === platform;
 
-        return matchesTerm && matchesCategory && matchesType && matchesTier;
+        return matchesTerm && matchesCategory && matchesType && matchesTier && matchesPlatform;
       });
     }
 
@@ -1056,15 +1126,20 @@
       els.typeFilter.value = 'all';
       els.tierGroup.querySelectorAll('button').forEach(b => b.classList.remove('active'));
       els.tierGroup.querySelector('[data-tier="all"]').classList.add('active');
+      els.platformGroup.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+      els.platformGroup.querySelector('[data-platform="all"]').classList.add('active');
       filterAndRender();
     }
 
     function openModal(prompt) {
       const tierClass = prompt.is_free ? 'badge-free' : 'badge-premium';
       const tierText = prompt.is_free ? '免费' : '付费';
+      const platformClass = prompt.platform === 'app' ? 'badge-platform-app' : 'badge-platform-website';
+      const platformText = prompt.platform === 'app' ? 'App' : 'Website';
 
       els.modalTitle.textContent = prompt.title;
       els.modalBadges.innerHTML = `
+        <span class="badge ${platformClass}">${platformText}</span>
         <span class="badge badge-category">${escapeHtml(prompt.category || '-')}</span>
         <span class="badge badge-type">${escapeHtml(prompt.type || '-')}</span>
         <span class="badge ${tierClass}">${tierText}</span>
@@ -1105,6 +1180,14 @@
     els.tierGroup.querySelectorAll('button').forEach(btn => {
       btn.addEventListener('click', () => {
         els.tierGroup.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterAndRender();
+      });
+    });
+
+    els.platformGroup.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        els.platformGroup.querySelectorAll('button').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         filterAndRender();
       });
